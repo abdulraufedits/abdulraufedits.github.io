@@ -1,0 +1,287 @@
+@media screen and (max-width: 1024px) {
+    p.abt-p{
+        font-size: 2vw;
+        line-height: 2;
+    }
+    strong.abt-strong{
+        font-size: calc(3vw - 1px);
+    }
+    .project-sec .project-sec-grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .contact-head{
+        width: 50%;
+    }
+    h2.skill-name{
+        font-size: calc(4vw + 2px);
+    }
+}
+@media screen and (max-width: 900px) {
+    .contact-cta{
+        flex-direction: column;
+        align-items: stretch;
+        gap: 3rem;
+    }
+    .contact-head{
+        width: 100%;
+    }
+    .contact-cta .cta{
+        width: 100%;
+        justify-content: center;
+    }
+    .abt-wrapper{
+        align-items: stretch;
+    }
+    .abtcontainer{
+        width: 100%;
+    }
+    .ctas{
+        display: block;
+        width: 100%;
+    }
+    .primary{
+        width: 100%;
+        justify-content: center;
+    }
+    .project-sec{
+        padding: 2rem 2rem;
+    }
+    .project-sec .project-sec-grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        animation: none;
+        transform: translate(0px);
+        gap: 2rem;
+    }
+    .projcontainer{
+        height: 25vh;
+        width: 36vw;
+        margin-bottom: 1rem;
+    }
+    .infocontainer .devinfo{
+        flex-direction: column;
+        align-items: center;
+    }
+    .devpic{
+        height: 60vh;
+    }
+    .hello{
+        margin: auto;
+        text-align: center;
+    }
+    .name{
+        font-size: calc(8vw + 8px);
+        text-align: center;
+    }
+    .devinfo h4{
+        width: auto;
+        font-size: 4vw;
+        padding: 2rem 0rem 3rem 0rem;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 720px) {
+    .project-sec .project-sec-grid{
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .projcontainer{
+        height: 40vh;
+        width: 80vw;
+    }
+    .exp-sec{
+        padding: 2rem 2rem;
+    }
+    .skills-sec{
+        padding: 2rem 2rem;
+    }
+    .contact-cta{
+        padding: 2rem 2rem;
+    }
+    .abt-wrapper{
+        padding: 2rem 2rem;
+    }
+    .container.home{
+        padding: 1rem 2rem;
+    }
+    .infocontainer{
+        padding: 3rem 0rem;
+    }
+    h2.exp-name{
+        font-size: calc(3vw + 16px);
+    }
+    .exp-tag{
+        font-size: 2vw;
+    }
+    .expcontainer{
+        padding: 2rem 0px;
+    }
+    button.exp-info::before{
+        top: 110%;
+    }
+    .skill-wrapper{
+        align-items: stretch;
+        justify-content: stretch;
+        flex-direction: column;
+    }
+    h2.app-name{
+        font-size: calc(3vw - 1px);
+    }
+    span.expert::before{
+        font-size: calc(2vw + 1px);
+    }
+    span.inter::before{
+        font-size: calc(2vw + 1px);
+        right: 350%;
+    }
+    span.beginner::before{
+        font-size: calc(2vw + 1px);
+        right: 300%;
+    }
+    .contact-head p{
+        margin-top: 1.5rem;
+    }
+}
+@media screen and (max-width: 690px) {
+    strong.abt-strong{
+        font-size: 24px;
+    }
+    p.abt-p{
+        font-size: 14px;
+    }
+    .nav__list{
+        flex-direction: column;
+        align-items: flex-start !important;
+    }
+    .nav__list .nav__list-item{
+        font-size: 32px;
+    }
+    .nav__list-item:hover{
+        padding: 0px;
+    }
+    .smlinks{
+        justify-content: start;
+        padding-left: 3rem;
+    }
+}
+@media screen and (max-width: 530px) {
+    .projcontainer{
+        height: 30vh;
+    }
+    button.exp-info{
+        padding: 12px;
+        border-radius: 100%;
+    }
+    .exp-info svg{
+        transform:scale(70%)
+    }
+    button.exp-info::before{
+        left: -60%;
+    }
+    .exp-tag{
+        font-size: calc(2vw + 3px);
+    }
+    .exp-tag .exp-name{
+        font-size: calc(5vw + 16px);
+    }
+    button.exp-info{
+        display: none;
+    }
+    h2.app-name{
+        font-size: 4vw;
+        font-weight: 600;
+    }
+    .contact-head strong{
+        font-size: 2rem;
+    }
+    a.connect-icon{
+        scale: 80%;
+    }
+    .connect-container{
+        padding: 0rem 2rem;
+    }
+    button.connect-cta{
+        padding: 20px 0px;
+    }
+    .menu-icon{
+        right: 20px;
+    }
+    .theme-cta{
+        right: 20px;
+    }
+    .hello{
+        font-size: 20px;
+    }
+    .smlinks a{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 430px) {
+    .projcontainer{
+        height: 20vh;
+        width: 70vw;
+    }
+    .skillcontainer{
+        padding: 2rem 2.5rem;
+    }
+    h2.skill-name{
+        font-size: 5vw;
+    }
+    span.expert::before, span.inter::before, span.beginner::before{ display: none;}
+}
+@media screen and (max-width: 340px) {
+    .projcontainer{
+        height: 16vh;
+        width: 56vw;
+    }
+    .name{
+        font-size: 14vw;
+    }
+}
+
+/* contact sec  */
+@media screen and (max-width:1024px) {
+    p.contact-p{
+        font-size: calc(4vw - 12px);
+    }
+    .contact-p input{
+        width: 80%;
+    }
+    .wrapper1{
+        padding: 0px 4rem;
+        margin: 0;
+    }
+}
+@media screen and (max-width: 730px) {
+    h1.contact{
+        font-size: 2.4rem;
+    }
+    .contact-p input::placeholder{
+        font-size: calc(4vw - 12px);
+    }
+}
+@media screen and (max-width: 610px) {
+    p.contact-p{
+        font-size: 20px;
+    }
+    .wrapper1{
+        padding: 0px;
+    }
+    .contact-p input::placeholder{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 530px) {
+    .devinfo1{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 380px) {
+    p.contact-p{
+        font-size: 16px;
+    }
+    .contact-p input{
+        font-size: 16px;
+    }
+}

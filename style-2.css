@@ -1,0 +1,302 @@
+.project-sec {
+  /* min-height: 100vh; */
+  padding: 2rem 6rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: var(--white);
+  transition: all 0.6s cubic-bezier(0.87, 0, 0.13, 1);
+  gap: 100px;
+}
+h1.proj-h1 {
+  color: var(--black);
+  font-size: 40px;
+  line-height: 1.2;
+  font-weight: 500;
+  letter-spacing: -0.05em;
+  user-select: none;
+}
+.project-sec .project-sec-grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  transform: translateX(50px);
+  animation: move 1s cubic-bezier(0.33, 1, 0.68, 1) infinite;
+  animation-play-state: paused;
+  animation-delay: calc(var(--scroll) * -1s);
+}
+@keyframes move {
+  to{
+      transform: translateX(-400px);
+  }
+}
+.projcontainer {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 16rem;
+  width: 24rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4rem;
+  padding: 20px 32px;
+  transform: translateY(0px);
+  transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.projcontainer .title {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  border: 0px;
+  border-radius: 4px;
+  outline: none;
+  background-color: #fff;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 16px 24px;
+  opacity: 0;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.projcontainer:hover{
+  transform: translateY(-10px);
+}
+.projcontainer:hover .title{
+  opacity: 1;
+}
+
+.connect-container{
+  background-color: #050505;
+  padding: 0rem 3rem;
+
+}
+.connect-container .connect-wrapper{
+  padding-top: 3rem;
+}
+button.connect-cta {
+  width: 100%;
+  font-family: var(--primary-font);
+  background-color: #050505;
+  color: #fff;
+  border: 0;
+  padding: 20px 40px;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.05em;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  transition: 0.3s;
+
+}
+strong{
+  font-weight: inherit;
+}
+.connect-icons {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  display: flex;
+  justify-content: space-evenly;
+  transform: translateY(100%);
+}
+.connect-icons a{
+  color: #ffffff;
+  transition: .3s cubic-bezier(0.33, 1, 0.68, 1); 
+}
+.connect-txt{
+  color: #ffffff;
+  display: inline-block;
+  transition: 1s cubic-bezier(0.16, 1, 0.3, 1);
+  transition-delay: 1.5s;
+
+}
+.connect-icons a:nth-child(1){
+  transition-delay: 1.5s;
+}
+.connect-icons a:nth-child(2){
+  transition-delay: calc(60ms + 1.5s);
+}
+.connect-icons a:nth-child(3){
+  transition-delay: calc(120ms + 1.5s);
+}
+.connect-icons a:nth-child(4){
+  transition-delay: calc(180ms + 1.5s);
+}
+.connect-icons a:nth-child(5){
+  transition-delay: calc(240ms + 1.5s);
+}
+.connect-txt.show,
+.connect-icon.show{
+  transform: translateY(-250%);
+}
+
+.skills-sec{
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  transition: all 0.6s cubic-bezier(0.87, 0, 0.13, 1);
+  gap: 100px;
+  padding: 2rem 6rem;
+  min-height: 100vh;
+}
+h1.skill-h1 {
+  color: var(--black);
+  font-size: 40px;
+  line-height: 1.2;
+  font-weight: 500;
+  letter-spacing: -0.05em;
+}
+.skills-sec .skill-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.skillcontainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--blue);
+  padding: 3rem 4rem;
+  gap: 2rem;
+}
+.skill-sec-9 .skillcontainer{
+  border-bottom: none;
+}
+h2.skill-name{
+  color: #ffffff;
+  font-size: 56px;
+  font-weight: 400;
+}
+.exp-tag{
+  color: var(--black-06);
+  font-weight: 500;
+}
+button.exp-info{
+  color: var(--black);
+  position: relative;
+  background-color: var(--white);
+  padding: 32px;
+  border-radius: 60px;
+  border:2px solid  var(--black-03);
+  transition: all 0.4s ease-out;
+  cursor: pointer;
+}
+button.exp-info::before{
+  content: "View profile";
+  position: absolute;
+  top: 120%; left: -20px;
+  width: 16ch;
+  text-align: center;
+  font-weight: 500;
+  color: var(--black-04);
+}
+h1.exp-h1{
+  color: var(--black);
+  font-size: 40px;
+  line-height: 1.2;
+  font-weight: 500;
+  letter-spacing: -0.05em;
+}
+h2.exp-name{
+  color: var(--black);
+  font-size: 5vw;
+  letter-spacing: -0.05em;
+  font-weight: 400;
+  margin-bottom: 1.3rem;
+}
+.expcontainer{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: 1px solid #aaa;
+  padding: 0rem 3rem 3rem 0rem;
+  gap: 2rem;
+  cursor: pointer;
+}
+.exp-info svg{
+  transform: rotateZ(45deg);
+  transition: all 0.4s cubic-bezier(0.37, 1, 0.43, 1);
+}
+.expcontainer:hover .exp-info svg, .expcontainer:active .exp-info svg{
+  transform: rotateZ(0deg);
+}
+.expcontainer:hover button.exp-info, .expcontainer:active button.exp-info{
+  background-color: var(--black);
+}
+.expcontainer:hover .exp-info svg path, .expcontainer:active .exp-info svg path{
+  fill: var(--white);
+}
+.exp-wrapper{
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+}
+.exp-sec{
+  /* min-height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  transition: all 0.6s cubic-bezier(0.87, 0, 0.13, 1);
+  gap: 100px;
+  padding: 2rem 6rem;
+}
+.apps-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin: 2rem 0;
+}
+.appcontainer{
+  display: flex;
+  align-items: center;
+  justify-content: stretch;
+  gap: 2rem;
+}
+h2.app-name{
+  color: var(--black);
+  font-size: 32px;
+  font-weight: 500
+}
+.appcontainer span{
+  width: 26px;
+  height: 26px;
+  border-radius: 80px;
+  margin-left: auto;
+}
+span.expert{
+  background-color: var(--yellow);
+}
+span.expert::before{
+  content: "Expert";
+  position: relative;
+  right: 260%;
+  color: var(--yellow);
+  font-weight: 700;
+}
+span.inter{
+  background-color: var(--blue);
+}
+span.inter::before{
+  content: "Intermediate";
+  position: relative;
+  right: 450%;
+  color: var(--blue);
+  font-weight: 700;
+}
+span.beginner{
+  background-color: var(--green);
+}
+span.beginner::before{
+  content: "Beginner";
+  position: relative;
+  right: 340%;
+  color: var(--green);
+  font-weight: 700;
+}
