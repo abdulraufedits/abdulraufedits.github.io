@@ -249,6 +249,7 @@
         width: 80%;
     }
     .wrapper1{
+        box-sizing: border-box;
         padding: 0px 4rem;
         margin: 0;
     }
@@ -268,8 +269,14 @@
     .wrapper1{
         padding: 0px;
     }
+    .wrapper2{
+        width: 80%;
+    }
     .contact-p input::placeholder{
-        font-size: 16px;
+        font-size: 12px;
+    }
+    .contact-p input{
+        width: 60%;
     }
 }
 @media screen and (max-width: 530px) {
@@ -283,5 +290,8 @@
     }
     .contact-p input{
         font-size: 16px;
+    }
+    h1.contact{
+        width: 60%;
     }
 }
