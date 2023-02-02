@@ -45,16 +45,16 @@
         <div class="wrapper1">
             <div class="devinfo1">
                 <h1 class="contact">Let's get started!</h1>
-                <form>
+                <form action="https://formsubmit.co/el/vusuke" method="POST">
                     <div class="wrapper2">
-                        <p class="contact-p">Greetings, my name is <input type="text" id="name" placeholder="Your name">
-                            and I have a <input type="text" id="client-issue" placeholder="website, job, project, etc">
+                        <p class="contact-p">Greetings, my name is <input type="text" id="name" placeholder="Your name" name="name">
+                            and I have a <input type="text" id="client-issue" placeholder="website, job, project, etc" name="Problem">
                             that needs help. You can reach
-                            me at <input type="email" id="email" placeholder="Your email address"> to get things
+                            me at <input type="email" id="email" placeholder="Your email address" name="email"> to get things
                             started.</p>
                     </div>
                     <div class="submit-cta">
-                        <span></span><input type="submit" value="Send info">
+                        <span></span><input name="submitCta" type="submit" value="Send info">
                     </div>
                 </form>
             </div>
