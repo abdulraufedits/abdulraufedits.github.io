@@ -69,19 +69,19 @@ var flag = 1;
 
 function validateForm() {
   if(clientName.value == ""){
-    clientName.style.setProperty('border', '1.3px');
+    clientName.style.setProperty('border', '1.3px solid');
     clientName.style.setProperty('border-color', 'red');
     flag = 0;
   } else{flag = 1;}
 
   if(issue.value == ""){
-    issue.style.setProperty('border', '1.3px');
+    issue.style.setProperty('border', '1.3px solid');
     issue.style.setProperty('border-color', 'red');
     flag = 0;
   } else{flag = 1;}
 
   if(email.value == ""){
-    email.style.setProperty('border', '1.3px');
+    email.style.setProperty('border', '1.3px solid');
     email.style.setProperty('border-color', 'red');
     flag = 0;
   } else{flag = 1;}
