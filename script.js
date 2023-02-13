@@ -34,20 +34,6 @@ function reveal() {
 window.addEventListener('scroll', () => {
   document.body.style.setProperty('--scroll', window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
 }, false);
-/*
-let Scrollbar = window.Scrollbar;
-let parameters = {
-  'damping': 0.1,
-  'renderByPixels': true,
-};
-function smoothScroll(){
-  if(document.querySelector('script[src="smooth-scrollbar.js"]')){
-    Scrollbar.init(document.querySelector('#scroller'), parameters );
-  } else {
-    console.log('garbar');
-  }
-}
-smoothScroll();*/
 
 let menuBtn = document.querySelector('.menu-icon');
 let navList = document.querySelectorAll('.nav__list-item');
@@ -75,3 +61,31 @@ function menuInactive(){
 };
 
 menuInactive();
+
+var clientName = document.getElementById('name');
+var issue = document.getElementById('client-issue');
+var email = document.getElementById('email');
+var flag = 1;
+
+function validateForm() {
+  if(clientName.value == ""){
+    clientName.style.setProperty('border-color', 'red');
+    flag = 0;
+  } else{flag = 1;}
+
+  if(issue.value == ""){
+    issue.style.setProperty('border-color', 'red');
+    flag = 0;
+  } else{flag = 1;}
+
+  if(email.value == ""){
+    email.style.setProperty('border-color', 'red');
+    flag = 0;
+  } else{flag = 1;}
+  
+  if(flag){
+    return true;
+  } else{
+    return false;
+  }
+}
