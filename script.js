@@ -69,20 +69,20 @@ var flag = 1;
 
 function validateForm() {
   if(clientName.value == ""){
-    clientName.style.setProperty('border-color', 'red');
     clientName.style.setProperty('border-width', '1.3px');
+    clientName.style.setProperty('border-color', 'red');
     flag = 0;
   } else{flag = 1;}
 
   if(issue.value == ""){
-    issue.style.setProperty('border-color', 'red');
     issue.style.setProperty('border-width', '1.3px');
+    issue.style.setProperty('border-color', 'red');
     flag = 0;
   } else{flag = 1;}
 
   if(email.value == ""){
-    email.style.setProperty('border-color', 'red');
     email.style.setProperty('border-width', '1.3px');
+    email.style.setProperty('border-color', 'red');
     flag = 0;
   } else{flag = 1;}
   
