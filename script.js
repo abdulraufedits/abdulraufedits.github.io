@@ -61,34 +61,3 @@ function menuInactive(){
 };
 
 menuInactive();
-
-var clientName = document.getElementById('name');
-var issue = document.getElementById('client-issue');
-var email = document.getElementById('email');
-var flag = 1;
-
-function validateForm() {
-  if(clientName.value == ""){
-    clientName.style.setProperty('border', '1.3px solid');
-    clientName.style.setProperty('border-color', 'red');
-    flag = 0;
-  } else{flag = 1;}
-
-  if(issue.value == ""){
-    issue.style.setProperty('border', '1.3px solid');
-    issue.style.setProperty('border-color', 'red');
-    flag = 0;
-  } else{flag = 1;}
-
-  if(email.value == ""){
-    email.style.setProperty('border', '1.3px solid');
-    email.style.setProperty('border-color', 'red');
-    flag = 0;
-  } else{flag = 1;}
-  
-  if(flag){
-    return true;
-  } else{
-    return false;
-  }
-}
