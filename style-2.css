@@ -18,29 +18,20 @@ h1.proj-h1 {
 }
 .project-sec .project-sec-grid{
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
-  transform: translateX(50px);
-  animation: move 1s cubic-bezier(0.33, 1, 0.68, 1) infinite;
-  animation-play-state: paused;
-  animation-delay: calc(var(--scroll) * -1s);
-}
-@keyframes move {
-  to{
-      transform: translateX(-400px);
-  }
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
 }
 .projcontainer {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 16rem;
-  width: 24rem;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 8px;
-  margin-bottom: 4rem;
+  border-radius: 14px;
+  aspect-ratio: 16/ 9;
+  margin: 1rem 0rem;
   padding: 20px 32px;
   transform: translateY(0px);
   transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);

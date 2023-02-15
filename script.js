@@ -31,9 +31,9 @@ function reveal() {
 
 }
 
-window.addEventListener('scroll', () => {
-  document.body.style.setProperty('--scroll', window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
-}, false);
+// window.addEventListener('scroll', () => {
+//   document.body.style.setProperty('--scroll', window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
+// }, false);
 
 let menuBtn = document.querySelector('.menu-icon');
 let navList = document.querySelectorAll('.nav__list-item');
