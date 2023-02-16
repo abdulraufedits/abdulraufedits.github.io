@@ -144,28 +144,34 @@ h1.skill-h1 {
   letter-spacing: -0.05em;
 }
 .skills-sec .skill-wrapper{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.skill-sec-1, .skill-sec-2, .skill-sec-3, .skill-sec-4, .skill-sec-5{
+  width: 100%;
 }
 .skillcontainer{
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-size: cover;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 600px;
-  height: 600px;
+  justify-content: start;
+  align-items: end;
+  height: 36vh;
   border-radius: 14px;
-  /* background-color: var(--blue); */
-  padding: 3rem 6rem;
-  gap: 2rem;
+  padding: 1rem 1rem;
 }
-.skill-sec-9 .skillcontainer{
-  border-bottom: none;
-}
+
 h2.skill-name{
-  color: #ffffff;
-  font-size: 56px;
+  color: var(--black);
+  font-size: 1.4rem;
   font-weight: 400;
+  position: relative;
+  width: 100%;
+  background-color: #eef4f8;
+  padding: 1rem 2rem;
+  border-radius: 12px;
 }
 .exp-tag{
   color: var(--black-06);
