@@ -146,7 +146,7 @@ h1.skill-h1 {
 .skills-sec .skill-wrapper{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+  gap: 2rem;
 }
 .skill-sec-1, .skill-sec-2, .skill-sec-3, .skill-sec-4, .skill-sec-5{
   width: 100%;

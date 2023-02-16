@@ -6,15 +6,8 @@
     strong.abt-strong{
         font-size: calc(3vw - 1px);
     }
-    .project-sec .project-sec-grid{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
     .contact-head{
         width: 50%;
-    }
-    h2.skill-name{
-        font-size: calc(4vw + 2px);
     }
 }
 @media screen and (max-width: 900px) {
@@ -50,14 +43,11 @@
     .project-sec .project-sec-grid{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        animation: none;
-        transform: translate(0px);
         gap: 2rem;
     }
     .projcontainer{
         height: 25vh;
-        width: 36vw;
-        margin-bottom: 1rem;
+        aspect-ratio: initial;
     }
     .infocontainer .devinfo{
         flex-direction: column;
@@ -74,6 +64,10 @@
         font-size: calc(8vw + 8px);
         text-align: center;
     }
+    .skills-sec .skill-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
     .devinfo h4{
         width: auto;
         font-size: 4vw;
@@ -83,12 +77,11 @@
 }
 @media screen and (max-width: 720px) {
     .project-sec .project-sec-grid{
-        grid-template-columns: 1fr;
-        justify-items: center;
+        display: flex;
+        flex-direction: column;
     }
     .projcontainer{
         height: 40vh;
-        width: 80vw;
     }
     .exp-sec{
         padding: 2rem 2rem;
@@ -119,11 +112,6 @@
     }
     button.exp-info::before{
         top: 110%;
-    }
-    .skill-wrapper{
-        align-items: stretch;
-        justify-content: stretch;
-        flex-direction: column;
     }
     h2.app-name{
         font-size: calc(3vw - 1px);
@@ -220,20 +208,23 @@
 @media screen and (max-width: 430px) {
     .projcontainer{
         height: 20vh;
-        width: 70vw;
-    }
-    .skillcontainer{
-        padding: 2rem 2.5rem;
-    }
-    h2.skill-name{
-        font-size: 5vw;
     }
     span.expert::before, span.inter::before, span.beginner::before{ display: none;}
 }
 @media screen and (max-width: 340px) {
     .projcontainer{
-        height: 16vh;
-        width: 56vw;
+        height: 10vh;
+    }
+    .project-sec .project-sec-grid{
+        gap: 0;
+    }
+    .skillcontainer{
+        padding-top: 1rem;
+        height: 20vh;
+    }
+    h2.skill-name{
+        font-size: 6vw;
+        padding: 0.4rem 1rem;
     }
     .name{
         font-size: 14vw;
