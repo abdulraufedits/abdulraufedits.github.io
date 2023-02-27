@@ -53,9 +53,6 @@
         flex-direction: column;
         align-items: center;
     }
-    .devpic{
-        height: 60vh;
-    }
     .hello{
         margin: auto;
         text-align: center;
@@ -76,6 +73,9 @@
     }
 }
 @media screen and (max-width: 720px) {
+    .devpics::after{
+        display: none;
+    }
     .project-sec .project-sec-grid{
         display: flex;
         flex-direction: column;
