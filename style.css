@@ -51,7 +51,7 @@ html.second{
 }
 body {
   font-family: var(--primary-font);
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 a {
@@ -66,15 +66,11 @@ button{
 
 .container {
   background-color: var(--white);
-  width: 100%;
+  /* width: 100%; */
   min-height: 100vh;
   padding: 0px 3rem;
 }
-.container.home{
-  box-sizing: border-box;
-}
 .infocontainer{
-  box-sizing: border-box;
   padding: 3rem 3rem;
 }
 .devinfo{
@@ -84,24 +80,27 @@ button{
 }
 .hello {
   color: var(--black);
-  font-size: 2.4vw;
+  font-size: 1rem;
   font-weight: 600;
   font-family: var(--primary-font);
-  padding-bottom: 64px;
 }
 .devpic{
   height: 85vh;
+  width: 100%;
+  object-fit: cover;
   border-radius: 14px;
 }
 .devpics{
+  width: 150vw;
   position: relative;
+  display: flex;
 }
 .devpics::after{
   content: "";
   background-color: #2f2f2f;
   position: absolute;
-  right: -36px; top: 42%;
-  width: 280px;
+  right: -26px; top: 42%;
+  width: 200px;
   height: 4px;
 }
 .name {
@@ -142,6 +141,7 @@ button{
   border-radius: 42px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 0.7rem;
   cursor: pointer;
   font-weight: 500;
@@ -177,7 +177,6 @@ button{
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  width: 60%;
 }
 .abt-head{
   display: flex;

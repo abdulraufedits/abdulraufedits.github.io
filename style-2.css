@@ -273,30 +273,9 @@ h2.app-name{
 span.expert{
   background-color: var(--yellow);
 }
-span.expert::before{
-  content: "Expert";
-  position: relative;
-  right: 260%;
-  color: var(--yellow);
-  font-weight: 700;
-}
 span.inter{
   background-color: var(--blue);
 }
-span.inter::before{
-  content: "Intermediate";
-  position: relative;
-  right: 450%;
-  color: var(--blue);
-  font-weight: 700;
-}
 span.beginner{
   background-color: var(--green);
-}
-span.beginner::before{
-  content: "Beginner";
-  position: relative;
-  right: 340%;
-  color: var(--green);
-  font-weight: 700;
 }

@@ -9,9 +9,18 @@
     .contact-head{
         width: 50%;
     }
+    .devpics::after{
+        display: none;
+    }
 }
 @media screen and (max-width: 900px) {
-    .contact-cta{
+    .devinfo p{
+        width: auto;
+    }
+    .devpics{
+        width: auto;
+    }
+    .contact-sec{
         flex-direction: column;
         align-items: stretch;
         gap: 3rem;
@@ -19,7 +28,7 @@
     .contact-head{
         width: 100%;
     }
-    .contact-cta .cta{
+    .contact-sec .cta{
         width: 100%;
         justify-content: center;
     }
@@ -28,14 +37,6 @@
     }
     .abtcontainer{
         width: 100%;
-    }
-    .ctas{
-        display: block;
-        width: 100%;
-    }
-    .primary{
-        width: 100%;
-        justify-content: center;
     }
     .project-sec{
         padding: 2rem 2rem;
@@ -51,15 +52,6 @@
     }
     .infocontainer .devinfo{
         flex-direction: column;
-        align-items: center;
-    }
-    .hello{
-        margin: auto;
-        text-align: center;
-    }
-    .name{
-        font-size: calc(8vw + 8px);
-        text-align: center;
     }
     .skills-sec .skill-wrapper{
         display: flex;
@@ -67,15 +59,12 @@
     }
     .devinfo h4{
         width: auto;
-        font-size: 4vw;
-        padding: 2rem 0rem 3rem 0rem;
-        text-align: center;
+        font-size: 24px;
+        padding: 1rem 0rem 1rem 0rem;
     }
 }
 @media screen and (max-width: 720px) {
-    .devpics::after{
-        display: none;
-    }
+
     .project-sec .project-sec-grid{
         display: flex;
         flex-direction: column;
@@ -89,7 +78,7 @@
     .skills-sec{
         padding: 2rem 2rem;
     }
-    .contact-cta{
+    .contact-sec{
         padding: 2rem 2rem;
     }
     .abt-wrapper{
@@ -204,12 +193,21 @@
     .smlinks a{
         font-size: 12px;
     }
+    .devpic{
+        height: 50vh;
+    }
 }
 @media screen and (max-width: 430px) {
     .projcontainer{
         height: 20vh;
     }
     span.expert::before, span.inter::before, span.beginner::before{ display: none;}
+    .container.home, .abt-wrapper, .project-sec, .exp-sec, .skills-sec,.contact-sec{
+        padding: 1rem;
+    }
+    .connect-container{
+        padding: 0rem 1rem;
+    }
 }
 @media screen and (max-width: 340px) {
     .projcontainer{
@@ -226,8 +224,14 @@
         font-size: 6vw;
         padding: 0.4rem 1rem;
     }
-    .name{
-        font-size: 14vw;
+    .devpic{
+        height: 30vh;
+    }
+    .ctas{
+        flex-direction: column;
+    }
+    .cta{
+        width: 100%;
     }
 }
 
