@@ -141,6 +141,12 @@
         justify-content: start;
         padding-left: 3rem;
     }
+    h1.abt-h1{
+        margin-bottom: 1.8rem;
+    }
+    .project-sec, .exp-sec, .skills-sec{
+        gap: 32px;
+    }
 }
 @media screen and (max-width: 530px) {
     .projcontainer{
@@ -202,7 +208,10 @@
         height: 20vh;
     }
     span.expert::before, span.inter::before, span.beginner::before{ display: none;}
-    .container.home, .abt-wrapper, .project-sec, .exp-sec, .skills-sec,.contact-sec{
+    .abt-wrapper, .project-sec, .exp-sec, .skills-sec,.contact-sec{
+        padding: 2rem 1rem;
+    }
+    .container.home{
         padding: 1rem;
     }
     .connect-container{

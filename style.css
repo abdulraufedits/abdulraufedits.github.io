@@ -153,6 +153,7 @@ button{
   background-color: var(--white);
   color: var(--black);
 }
+
 .contact-cta{
   padding: 24px 32px;
   font-size: 1.1rem;

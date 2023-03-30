@@ -78,7 +78,7 @@
     </div>
     <main class="abt-wrapper" id="abt--sec">
         <div class="abt-head">
-            <h1 class="abt-h1">About</h1><img src="../imgs/new avi.jpg" alt="my about image" class="abt-img">
+            <h1 class="abt-h1">About</h1><img id="abt--img" alt="my about image" class="abt-img">
         </div>
         <div class="abtcontainer">
             <strong class="abt-strong">Transforming ideas into reality.
@@ -102,7 +102,7 @@
         <article class="project-sec-grid">
             <section onclick="location.href='https:\/\/www.behance.net/gallery/153254433/Melodica-A-music-app';"
                 style="cursor: pointer;" class="project-sec-1">
-                <div class="projcontainer" style="background-image: url(../imgs/melodica-thumb.jpg);">
+                <div class="projcontainer" id="project--1">
                     <a href="https://www.behance.net/gallery/153254433/Melodica-A-music-app" target="_blank"><button
                             class="title">View Project<svg width="12" height="11" viewBox="0 0 12 11" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -117,7 +117,7 @@
             </section>
             <section onclick="location.href='https:\/\/www.behance.net/gallery/152043293/Windows-12-%28concept%29';"
                 style="cursor: pointer;" class="project-sec-2">
-                <div class="projcontainer" style="background-image: url(../imgs/win12.png);">
+                <div class="projcontainer" id="project--2">
                     <a href="https://www.behance.net/gallery/152043293/Windows-12-%28concept%29" target="_blank"><button
                             class="title">View Project<svg width="12" height="11" viewBox="0 0 12 11" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -132,7 +132,7 @@
             </section>
             <section onclick="location.href='https:\/\/www.behance.net/gallery/156633003/Adesarwala-A-Clothing-Brand';"
                 style="cursor: pointer;" class="project-sec-3">
-                <div class="projcontainer" style="background-image: url(../imgs/ades.png);">
+                <div class="projcontainer" id="project--3">
                     <a href="https://www.behance.net/gallery/156633003/Adesarwala-A-Clothing-Brand"
                         target="_blank"><button class="title">View Project<svg width="12" height="11"
                                 viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -148,7 +148,7 @@
             <section
                 onclick="location.href='https:\/\/www.behance.net/gallery/155045671/Alight-Motion-Desktop-concept';"
                 style="cursor: pointer;" class="project-sec-4">
-                <div class="projcontainer" style="background-image: url(../imgs/am.png);">
+                <div class="projcontainer" id="project--4">
                     <a href="https://www.behance.net/gallery/155045671/Alight-Motion-Desktop-concept"
                         target="_blank"><button class="title">View Project<svg width="12" height="11"
                                 viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -162,7 +162,7 @@
             </section>
             <section onclick="location.href='https:\/\/www.behance.net/gallery/163662085/Penpot-app-Redesign';"
                 style="cursor: pointer;" class="project-sec-5">
-                <div class="projcontainer" style="background-image: url(../imgs/pp\ thumb.png);">
+                <div class="projcontainer" id="project--5">
                     <a href="https://www.behance.net/gallery/163662085/Penpot-app-Redesign" target="_blank"><button
                             class="title">View Project<svg width="12" height="11" viewBox="0 0 12 11" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -241,92 +241,79 @@
         <div class="apps-wrapper">
             <section class="apps-sec-1">
                 <div class="appcontainer">
-                    <img src="../imgs/app icons/figma.svg" alt="Figma"
-                        onerror="this.onerror=null; this.src= '../imgs/app icons/unavailable.png';">
+                    <img src="../imgs/app icons/figma.svg" alt="Figma">
                     <h2 class="app-name">Figma</h2><span class="expert"></span>
                 </div>
             </section>
             <section class="apps-sec-2">
                 <div class="appcontainer">
-                    <img src="../imgs/app icons/webflow.svg" alt="webflow"
-                        onerror="this.onerror=null; this.src= '../imgs/app icons/unavailable.png';">
+                    <img src="../imgs/app icons/webflow.svg" alt="webflow">
                     <h2 class="app-name">Webflow</h2><span class="expert"></span>
                 </div>
             </section>
             <section class="apps-sec-3">
                 <div class="appcontainer">
-                    <img src="../imgs/app icons/framer.svg" alt="Framer"
-                        onerror="this.onerror=null; this.src= '../imgs/app icons/unavailable.png';">
+                    <img src="../imgs/app icons/framer.svg" alt="Framer">
                     <h2 class="app-name">Framer</h2><span class="expert"></span>
                 </div>
             </section>
             <section class="apps-sec-3_1">
                 <div class="appcontainer">
-                    <img src="../imgs/app icons/penpot.svg" alt="Penpot"
-                        onerror="this.onerror=null; this.src= '../imgs/app icons/unavailable.png';">
+                    <img src="../imgs/app icons/penpot.svg" alt="Penpot">
                     <h2 class="app-name">Penpot</h2><span class="expert"></span>
                 </div>
             </section>
             <section class="apps-sec-4">
                 <div class="appcontainer">
-                    <img src="../imgs/app icons/xd.svg" alt="xd"
-                        onerror="this.onerror=null; this.src= '../imgs/app icons/unavailable.png';">
+                    <img src="../imgs/app icons/xd.svg" alt="xd">
                     <h2 class="app-name">Adobe XD</h2><span class="expert"></span>
                 </div>
             </section>
             <section class="apps-sec-5">
                 <div class="appcontainer">
-                    <img src="../imgs/app icons/ai.svg" alt="Illustrator"
-                        onerror="this.onerror=null; this.src= '../imgs/app icons/unavailable.png';">
+                    <img src="../imgs/app icons/ai.svg" alt="Illustrator">
                     <h2 class="app-name">Adobe Illustrator</h2><span class="inter"></span>
                 </div>
             </section>
             <section class="apps-sec-6">
                 <div class="appcontainer">
-                    <img src="../imgs/app icons/ps.svg" alt="photoshop"
-                        onerror="this.onerror=null; this.src= '../imgs/app icons/unavailable.png';">
+                    <img src="../imgs/app icons/ps.svg" alt="photoshop">
                     <h2 class="app-name">Adobe Photoshop</h2><span class="inter"></span>
                 </div>
             </section>
             <section class="apps-sec-7">
                 <div class="appcontainer">
-                    <img src="../imgs/app icons/lr.svg" alt="lightroom"
-                        onerror="this.onerror=null; this.src= '../imgs/app icons/unavailable.png';">
+                    <img src="../imgs/app icons/lr.svg" alt="lightroom">
                     <h2 class="app-name">Adobe Lightroom</h2><span class="inter"></span>
                 </div>
             </section>
             <section class="apps-sec-8">
                 <div class="appcontainer">
-                    <img src="../imgs/app icons/adobe_after_effects.svg" alt="After Effects"
-                        onerror="this.onerror=null; this.src= '../imgs/app icons/unavailable.png';">
+                    <img src="../imgs/app icons/adobe_after_effects.svg" alt="After Effects">
                     <h2 class="app-name">After Effects</h2><span class="inter"></span>
                 </div>
             </section>
             <section class="apps-sec-9">
                 <div class="appcontainer">
-                    <img src="../imgs/app icons/invision.svg" alt="invision"
-                        onerror="this.onerror=null; this.src= '../imgs/app icons/unavailable.png';">
+                    <img src="../imgs/app icons/invision.svg" alt="invision">
                     <h2 class="app-name">Invision Studio</h2><span class="inter"></span>
                 </div>
             </section>
             <section class="apps-sec-10">
                 <div class="appcontainer">
-                    <img src="../imgs/app icons/html.svg" alt="html"
-                        onerror="this.onerror=null; this.src= '../imgs/app icons/unavailable.png';">
+                    <img src="../imgs/app icons/html.svg" alt="html">
                     <h2 class="app-name">HTML</h2><span class="expert"></span>
                 </div>
             </section>
             <section class="apps-sec-11">
                 <div class="appcontainer">
-                    <img src="../imgs/app icons/css.svg" alt="css"
-                        onerror="this.onerror=null; this.src= '../imgs/app icons/unavailable.png';">
+                    <img src="../imgs/app icons/css.svg" alt="css">
                     <h2 class="app-name">CSS</h2><span class="expert"></span>
                 </div>
             </section>
             <section class="apps-sec-12">
                 <div class="appcontainer">
-                    <img src="../imgs/app icons/js.svg" alt="script"
-                        onerror="this.onerror=null; this.src= '../imgs/app icons/unavailable.png';">
+                    <img src="../imgs/app icons/js.svg" alt="script">
                     <h2 class="app-name">JavaScript</h2><span class="beginner"></span>
                 </div>
             </section>
@@ -397,6 +384,7 @@
             </button>
         </div>
     </footer>
+    <script src="media.js"></script>
     <script src="script.js"></script>
     </div>
 </body>
