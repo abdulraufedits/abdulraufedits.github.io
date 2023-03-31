@@ -63,7 +63,9 @@ a {
 button{
   font-family: 'Plus Jakarta Sans';
 }
-
+img{
+  pointer-events: none;
+}
 .container {
   background-color: var(--white);
   /* width: 100%; */

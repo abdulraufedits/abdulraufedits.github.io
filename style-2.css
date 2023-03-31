@@ -35,6 +35,9 @@ h1.proj-h1 {
   padding: 20px 32px;
   transform: translateY(0px);
   transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 .projcontainer .title {
