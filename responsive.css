@@ -273,9 +273,6 @@
     .wrapper1{
         padding: 0px;
     }
-    .wrapper2{
-        /* width: 80%; */
-    }
     .contact-p input::placeholder{
         font-size: 12px;
     }
