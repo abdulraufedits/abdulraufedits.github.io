@@ -254,7 +254,7 @@
     }
     .wrapper1{
         box-sizing: border-box;
-        padding: 0px 4rem;
+        padding: 0px 2rem;
         margin: 0;
     }
 }
@@ -274,7 +274,7 @@
         padding: 0px;
     }
     .wrapper2{
-        width: 80%;
+        /* width: 80%; */
     }
     .contact-p input::placeholder{
         font-size: 12px;
