@@ -168,7 +168,6 @@ img{
   background-color: var(--white-07);
 }
 .abt-wrapper{
-  min-height: 100vh;
   padding: 2rem 6rem;
   display: flex;
   flex-direction: column;
