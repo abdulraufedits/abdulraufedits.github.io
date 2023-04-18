@@ -116,7 +116,7 @@ img{
   user-select: none;
 }
 .devinfo h4 {
-  font-size: calc(3vw - 14px);
+  font-size: 32px;
   font-weight: 300;
   line-height: 1;
   letter-spacing: -0.05em;
