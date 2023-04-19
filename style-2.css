@@ -282,3 +282,26 @@ span.inter{
 span.beginner{
   background-color: var(--green);
 }
+
+.key-box{
+  display: flex;
+  justify-content: end;
+  gap: 2rem;
+}
+.key-box span{
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border-radius: 80px;
+  margin-right: 1rem;
+}
+.key-1, .key-2{
+  background-color: var(--white-08);
+  padding: 10px 16px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  color: var(--black);
+  font-size: 1.4rem;
+  font-weight: 500;
+}

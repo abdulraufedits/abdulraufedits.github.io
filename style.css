@@ -11,6 +11,7 @@ html {
   --black-06: #585858;
   --white-06: #a5a5a5;
   --white-07: #efefef;
+  --white-08: #f6f6f6;
   --blue: #0065ea;
   --blue-second: #d7e1f0;
   --yellow: #ebab23;
@@ -27,6 +28,7 @@ html.second{
   --black-06: #aaaaaa;
   --white-06: #282828;
   --white-07: #181818;
+  --white-08: #121212;
   --black-08: rgba(0, 0 , 0 , 0.2);
 }
 ::selection{
@@ -205,7 +207,7 @@ strong.abt-strong{
 }
 p.abt-p{
   color: var(--black);
-  font-size: 20px;
+  font-size: 16px;
   line-height: 180%;
   font-family: var(--primary-font);
 }
