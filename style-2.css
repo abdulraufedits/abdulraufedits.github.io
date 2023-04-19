@@ -265,7 +265,7 @@ h2.exp-name{
 h2.app-name{
   color: var(--black);
   font-size: 32px;
-  font-weight: 500
+  font-weight: 500;
 }
 .appcontainer span{
   width: 26px;
@@ -286,7 +286,7 @@ span.beginner{
 .key-box{
   display: flex;
   justify-content: end;
-  gap: 2rem;
+  gap: 5%;
 }
 .key-box span{
   display: inline-block;
@@ -302,6 +302,6 @@ span.beginner{
   display: flex;
   align-items: center;
   color: var(--black);
-  font-size: 1.4rem;
+  font-size: 16px;
   font-weight: 500;
 }

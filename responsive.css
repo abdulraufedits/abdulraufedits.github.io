@@ -102,18 +102,7 @@
         top: 110%;
     }
     h2.app-name{
-        font-size: calc(3vw - 1px);
-    }
-    span.expert::before{
-        font-size: calc(2vw + 1px);
-    }
-    span.inter::before{
-        font-size: calc(2vw + 1px);
-        right: 350%;
-    }
-    span.beginner::before{
-        font-size: calc(2vw + 1px);
-        right: 300%;
+        font-size: 18px;
     }
     .contact-head p{
         margin-top: 1.5rem;
@@ -167,10 +156,6 @@
     button.exp-info{
         display: none;
     }
-    h2.app-name{
-        font-size: 4vw;
-        font-weight: 600;
-    }
     .contact-head strong{
         font-size: 2rem;
     }
@@ -213,6 +198,14 @@
     .connect-container{
         padding: 0rem 1rem;
     }
+    .key-box span{
+        width: 20px;
+        height: 20px;
+    }
+    .key-box{
+        flex-direction: column;
+        gap: 8px;
+    }
 }
 @media screen and (max-width: 340px) {
     .projcontainer{
@@ -237,6 +230,9 @@
     }
     .cta{
         width: 100%;
+    }
+    .appcontainer{
+        gap: 0.8rem;
     }
 }
 
