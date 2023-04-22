@@ -99,14 +99,14 @@ img{
   position: relative;
   display: flex;
 }
-.devpics::after{
+/* .devpics::after{
   content: "";
   background-color: #2f2f2f;
   position: absolute;
-  right: -26px; top: 42%;
+  right: -32px; top: 34%;
   width: 200px;
   height: 4px;
-}
+} */
 .name {
   color: var(--black);
   font-size: 4rem;

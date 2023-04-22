@@ -286,7 +286,7 @@ span.beginner{
 .key-box{
   display: flex;
   justify-content: end;
-  gap: 5%;
+  gap: 16px;
 }
 .key-box span{
   display: inline-block;
