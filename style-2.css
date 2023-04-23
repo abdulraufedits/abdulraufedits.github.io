@@ -305,3 +305,44 @@ span.beginner{
   font-size: 16px;
   font-weight: 500;
 }
+
+#email_box{
+  box-sizing: border-box;
+  color: #fff;
+  background-color: var(--blue);
+  margin: 2rem 0rem;
+  padding: 26px 36px;
+  border-radius: 24px;
+  overflow: hidden;
+  display: none;
+  /* transform-origin: top; */
+  /* animation: emailBox 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) forwards; */
+
+}
+#email_box.on{
+  display: block;
+}
+#email_box div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#email_box div p{
+  font-weight: 500;
+  font-size: 18px;
+}
+
+@keyframes emailBox {
+  0%{
+    opacity: 0;
+    height: 0px;
+    transform: scaleY(0);
+  }
+  40%{
+    opacity: 1;
+    transform: scaleY(1);
+  }
+  50%{
+    height: auto;
+  }
+}

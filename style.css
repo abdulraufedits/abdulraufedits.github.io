@@ -169,6 +169,10 @@ img{
 .secondary-cta:hover, .secondary-cta:active{
   background-color: var(--white-07);
 }
+.email-view{
+  padding: 14px;
+  width: fit-content !important;
+}
 .abt-wrapper{
   padding: 2rem 6rem;
   display: flex;
