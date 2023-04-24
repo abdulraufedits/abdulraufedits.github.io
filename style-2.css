@@ -311,9 +311,9 @@ span.beginner{
   color: #fff;
   background-color: var(--blue);
   margin: 2rem 0rem;
-  padding: 26px 36px;
+  padding: 2rem 2rem;
   border-radius: 24px;
-  overflow: hidden;
+  overflow: auto;
   display: none;
   /* transform-origin: top; */
   /* animation: emailBox 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) forwards; */
@@ -329,9 +329,11 @@ span.beginner{
 }
 #email_box div p{
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
 }
-
+#email_box div svg{
+  height: 36px;
+}
 @keyframes emailBox {
   0%{
     opacity: 0;

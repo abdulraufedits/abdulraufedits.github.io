@@ -206,7 +206,14 @@
         flex-direction: column;
         gap: 8px;
     }
+    #email_box{
+        padding: 1rem;
+    }
+    #email_box div p{
+        font-size: 0.9rem;
+    }
 }
+
 @media screen and (max-width: 340px) {
     .projcontainer{
         height: 10vh;
@@ -233,6 +240,9 @@
     }
     .appcontainer{
         gap: 0.8rem;
+    }
+    #email_box div svg{
+        display: none;
     }
 }
 
