@@ -1,21 +1,13 @@
-.project-sec {
-  /* min-height: 100vh; */
+.project-sec, .abt-wrapper, .skills-sec, .exp-sec {
   padding: 2rem 6rem;
   display: flex;
   flex-direction: column;
   overflow: hidden;
   background-color: var(--white);
   transition: all 0.6s cubic-bezier(0.87, 0, 0.13, 1);
-  gap: 100px;
+  gap: 50px;
 }
-h1.proj-h1 {
-  color: var(--black);
-  font-size: 40px;
-  line-height: 1.2;
-  font-weight: 500;
-  letter-spacing: -0.05em;
-  user-select: none;
-}
+
 .project-sec .project-sec-grid{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -129,23 +121,6 @@ strong{
   transform: translateY(-250%);
 }
 
-.skills-sec{
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  background-color: var(--white);
-  transition: all 0.6s cubic-bezier(0.87, 0, 0.13, 1);
-  gap: 100px;
-  padding: 2rem 6rem;
-  min-height: 100vh;
-}
-h1.skill-h1 {
-  color: var(--black);
-  font-size: 40px;
-  line-height: 1.2;
-  font-weight: 500;
-  letter-spacing: -0.05em;
-}
 .skills-sec .skill-wrapper{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -199,13 +174,6 @@ button.exp-info::before{
   font-weight: 500;
   color: var(--black-04);
 }
-h1.exp-h1{
-  color: var(--black);
-  font-size: 40px;
-  line-height: 1.2;
-  font-weight: 500;
-  letter-spacing: -0.05em;
-}
 h2.exp-name{
   color: var(--black);
   font-size: 5vw;
@@ -241,31 +209,21 @@ h2.exp-name{
   gap: 2rem;
   flex-direction: column;
 }
-.exp-sec{
-  /* min-height: 100vh; */
-  display: flex;
-  flex-direction: column;
-  background-color: var(--white);
-  transition: all 0.6s cubic-bezier(0.87, 0, 0.13, 1);
-  gap: 100px;
-  padding: 2rem 6rem;
-}
+
 .apps-wrapper{
   display: flex;
   flex-direction: column;
-  gap: 3rem;
-  margin: 2rem 0;
 }
 .appcontainer{
   display: flex;
   align-items: center;
-  justify-content: stretch;
-  gap: 2rem;
+  border-bottom: 1px solid #ccc;
+  padding: 1rem 0px;
 }
 h2.app-name{
   color: var(--black);
-  font-size: 32px;
-  font-weight: 500;
+  font-size: 21px;
+  font-weight: 400;
 }
 .appcontainer span{
   width: 26px;
@@ -287,6 +245,7 @@ span.beginner{
   display: flex;
   justify-content: end;
   gap: 16px;
+  margin-bottom: 2rem;
 }
 .key-box span{
   display: inline-block;

@@ -1,12 +1,6 @@
 @media screen and (max-width: 1024px) {
-    p.abt-p{
-        line-height: 2;
-    }
     strong.abt-strong{
         font-size: calc(3vw - 1px);
-    }
-    .contact-head{
-        width: 50%;
     }
     .devpics::after{
         display: none;
@@ -18,18 +12,6 @@
     }
     .devpics{
         width: 80vw;
-    }
-    .contact-sec{
-        flex-direction: column;
-        align-items: stretch;
-        gap: 3rem;
-    }
-    .contact-head{
-        width: 100%;
-    }
-    .contact-sec .cta{
-        width: 100%;
-        justify-content: center;
     }
     .abt-wrapper{
         align-items: stretch;
@@ -61,9 +43,11 @@
         font-size: 24px;
         padding: 1rem 0rem 1rem 0rem;
     }
+    p.abt-p{
+        width: auto;
+    }
 }
 @media screen and (max-width: 720px) {
-
     .project-sec .project-sec-grid{
         display: flex;
         flex-direction: column;
@@ -71,16 +55,7 @@
     .projcontainer{
         height: 40vh;
     }
-    .exp-sec{
-        padding: 2rem 2rem;
-    }
-    .skills-sec{
-        padding: 2rem 2rem;
-    }
-    .contact-sec{
-        padding: 2rem 2rem;
-    }
-    .abt-wrapper{
+    .contact-sec, .abt-wrapper, .skills-sec, .exp-sec, .abt-wrapper{
         padding: 2rem 2rem;
     }
     .container.home{
@@ -102,35 +77,24 @@
         top: 110%;
     }
     h2.app-name{
-        font-size: 18px;
+        font-size: 16px;
     }
-    .contact-head p{
-        margin-top: 1.5rem;
+    .nav__list .nav__list-item{
+        font-size: 3rem;
+    }
+    .menu-resume-svg{
+        height: 2rem;
     }
 }
 @media screen and (max-width: 690px) {
     strong.abt-strong{
         font-size: 24px;
     }
-    .nav__list{
-        flex-direction: column;
-        align-items: flex-start !important;
-    }
-    .nav__list .nav__list-item{
-        font-size: 32px;
-    }
-    .nav__list-item:hover{
-        padding: 0px;
-    }
-    .smlinks{
-        justify-content: start;
-        padding-left: 3rem;
-    }
-    h1.abt-h1{
-        margin-bottom: 1.8rem;
-    }
     .project-sec, .exp-sec, .skills-sec{
         gap: 32px;
+    }
+    .nav-wrapper > span{
+        display: none;
     }
 }
 @media screen and (max-width: 530px) {
@@ -156,9 +120,6 @@
     button.exp-info{
         display: none;
     }
-    .contact-head strong{
-        font-size: 2rem;
-    }
     a.connect-icon{
         scale: 80%;
     }
@@ -168,20 +129,24 @@
     button.connect-cta{
         padding: 20px 0px;
     }
-    .menu-icon{
-        right: 20px;
-    }
-    .theme-cta{
+    .menu-icon, .theme-cta{
         right: 20px;
     }
     .hello{
         font-size: 20px;
     }
-    .smlinks a{
-        font-size: 12px;
-    }
     .devpic{
         height: 56vh;
+    }
+    .nav-content{
+        padding: 0px;
+        justify-content: end;
+        gap: 3rem;
+    }
+    .nav-wrapper{padding: 0px 2rem;}
+    .smlinks{
+        margin-bottom: 2rem;
+        margin-top: 30%;
     }
 }
 @media screen and (max-width: 430px) {
@@ -211,6 +176,13 @@
     }
     #email_box div p{
         font-size: 0.9rem;
+    }
+    .nav__list .nav__list-item{
+        font-size: 36px;
+        margin-bottom: 2rem;
+    }
+    .menu-resume-svg{
+        height: 21px;
     }
 }
 
@@ -244,6 +216,12 @@
     #email_box div svg{
         display: none;
     }
+    .smlinks{
+        flex-direction: column;
+        align-items: start;
+        gap: 14px;
+        margin-top: 20%;
+    }
 }
 
 /* contact sec  */
@@ -260,6 +238,20 @@
         margin: 0;
     }
 }
+@media screen and (max-width: 900px) {
+    .contact-sec{
+        flex-direction: column;
+        align-items: stretch;
+        gap: 3rem;
+    }
+    .contact-head{
+        width: 100%;
+    }
+    .contact-sec .cta{
+        width: 100%;
+        justify-content: center;
+    }
+}
 @media screen and (max-width: 730px) {
     h1.contact{
         font-size: 2.4rem;
@@ -267,6 +259,10 @@
     .contact-p input::placeholder{
         font-size: calc(4vw - 12px);
     }
+    .contact-head p{
+        margin-top: 1.5rem;
+    }
+
 }
 @media screen and (max-width: 610px) {
     p.contact-p{
@@ -280,6 +276,14 @@
     }
     .contact-p input{
         width: 60%;
+    }
+    .contact-head strong{
+        font-size: 2rem;
+    }
+    .abt-p-container{
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
     }
 }
 @media screen and (max-width: 530px) {

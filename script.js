@@ -37,7 +37,7 @@ function reveal() {
 
 let menuBtn = document.querySelector('.menu-icon');
 let navList = document.querySelectorAll('.nav__list-item');
-let navContent = document.querySelector('.nav-content');
+let navContent = document.querySelector('.nav-wrapper');
 let navListItem = document.querySelectorAll('.nav__list-item a');
 
 function menuActive(){

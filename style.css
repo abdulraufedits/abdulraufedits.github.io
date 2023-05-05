@@ -99,14 +99,6 @@ img{
   position: relative;
   display: flex;
 }
-/* .devpics::after{
-  content: "";
-  background-color: #2f2f2f;
-  position: absolute;
-  right: -32px; top: 34%;
-  width: 200px;
-  height: 4px;
-} */
 .name {
   color: var(--black);
   font-size: 4rem;
@@ -174,30 +166,22 @@ img{
   padding: 14px;
   width: fit-content !important;
 }
-.abt-wrapper{
-  padding: 2rem 6rem;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  background-color: var(--white);
-  transition: all 0.6s cubic-bezier(0.87, 0, 0.13, 1);
-}
+
 .abtcontainer{
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 4rem;
 }
 .abt-head{
   display: flex;
   gap: 48px;
 }
-h1.abt-h1{
+h1.abt-h1, h1.proj-h1, h1.skill-h1, h1.exp-h1{
   color: var(--black);
   font-size: 40px;
   line-height: 1.2;
   font-weight: 500;
   letter-spacing: -0.05em;
-  margin-bottom: 100px;
   user-select: none;
 }
 img.abt-img{
@@ -210,12 +194,30 @@ strong.abt-strong{
   font-size: calc(2vw + 10px);
   font-weight: 700;
 }
+strong.abt-strong > span{
+  display: block;
+  font-size: calc(9vw + 14px);
+  margin-bottom: 1rem;
+  line-height: 110%;
+}
+.abt-p-container{
+  display: grid;
+  grid-template-areas:
+  ". top-area top-area top-area .        .        .       "
+  ". .        .        .        mid-area mid-area mid-area"
+  ". mid-area2 mid-area2 mid-area2 .        .        .       "
+  ". .        .        .        btm-area btm-area btm-area";
+  row-gap: 6rem;
+}
+
 p.abt-p{
   color: var(--black);
-  font-size: 16px;
+  font-size: 18px;
   line-height: 180%;
+  width: 60%;
   font-family: var(--primary-font);
 }
+
 .contact-sec{
   background-color: #050505;
   padding: 2rem 6rem;
@@ -231,7 +233,7 @@ p.abt-p{
   color: #ffffff;
 }
 .contact-head{
-  width: 35%;
+  width: 50%;
 }
 .contact-head strong{
   color: #ffffff;
