@@ -34,10 +34,6 @@
     .infocontainer .devinfo{
         flex-direction: column;
     }
-    .skills-sec .skill-wrapper{
-        display: flex;
-        flex-direction: column;
-    }
     .devinfo h4{
         width: auto;
         font-size: 24px;
@@ -84,6 +80,10 @@
     }
     .menu-resume-svg{
         height: 2rem;
+    }
+    .skills-sec .skill-wrapper{
+        display: flex;
+        flex-direction: column;
     }
 }
 @media screen and (max-width: 690px) {
@@ -192,14 +192,6 @@
     }
     .project-sec .project-sec-grid{
         gap: 0;
-    }
-    .skillcontainer{
-        padding-top: 1rem;
-        height: 20vh;
-    }
-    h2.skill-name{
-        font-size: 6vw;
-        padding: 0.4rem 1rem;
     }
     .devpic{
         height: 40vh;

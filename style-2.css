@@ -123,33 +123,26 @@ strong{
 
 .skills-sec .skill-wrapper{
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 1fr;
   gap: 2rem;
 }
 .skill-sec-1, .skill-sec-2, .skill-sec-3, .skill-sec-4, .skill-sec-5{
   width: 100%;
 }
-.skillcontainer{
-  background-position: center;
-  background-repeat: no-repeat; 
-  background-size: cover;
-  display: flex;
-  justify-content: start;
-  align-items: end;
-  height: 36vh;
-  border-radius: 14px;
-  padding: 4rem 1rem 1rem 1rem;
-}
 
 h2.skill-name{
-  color: #050505;
-  font-size: 1.4rem;
-  font-weight: 400;
-  position: relative;
-  width: 100%;
-  background-color: #f9fafc;
-  padding: 1rem 2rem;
-  border-radius: 12px;
+  color: var(--black);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.skillcontainer ul{
+  list-style-type: none;
+  margin: 1rem 0px;
+  color: var(--black);
+}
+.skillcontainer ul li{
+  opacity: 0.7;
+  margin-bottom: 8px;
 }
 .exp-tag{
   color: var(--black-06);
@@ -217,7 +210,7 @@ h2.exp-name{
 .appcontainer{
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid rgba(136, 136, 136, 0.2);
   padding: 1rem 0px;
 }
 h2.app-name{
