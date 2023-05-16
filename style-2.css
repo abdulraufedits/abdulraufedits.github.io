@@ -267,8 +267,6 @@ span.beginner{
   border-radius: 24px;
   overflow: auto;
   display: none;
-  /* transform-origin: top; */
-  /* animation: emailBox 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) forwards; */
 
 }
 #email_box.on{
@@ -285,18 +283,4 @@ span.beginner{
 }
 #email_box div svg{
   height: 36px;
-}
-@keyframes emailBox {
-  0%{
-    opacity: 0;
-    height: 0px;
-    transform: scaleY(0);
-  }
-  40%{
-    opacity: 1;
-    transform: scaleY(1);
-  }
-  50%{
-    height: auto;
-  }
 }

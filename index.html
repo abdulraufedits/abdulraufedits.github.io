@@ -55,7 +55,7 @@
                 </div>
                 <div>
                     <h3 class="hello">Oh, Hello there!</h3>
-                    <h1 class="name">It's Abdul Rauf</h1>
+                    <h1 class="name text_anim">It's Abdul Rauf</h1>
                     <h4><span style="color: var(--blue);">UI/UX Designer</span> &nbsp;<span
                             style="color: var(--yellow);">Frontend Developer</span></h4>
                     <p>I'm a UI/UX designer and frontend web developer with a strong background in creating engaging
@@ -84,11 +84,11 @@
             <div id="email_box">
 
                 <div>
-                    <p>editsabdulrauf5681@gmail.com</p><svg fill="currentColor" xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 96 960 960" width="48">
-                        <path
-                            d="M180 975q-24 0-42-18t-18-42V342q0-12.75 8.675-21.375 8.676-8.625 21.5-8.625 12.825 0 21.325 8.625T180 342v573h444q12.75 0 21.375 8.675 8.625 8.676 8.625 21.5 0 12.825-8.625 21.325T624 975H180Zm120-120q-24 0-42-18t-18-42V235q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300Zm0-60h440V235H300v560Zm0 0V235v560Z">
-                    </svg>
+                    <p id="email">editsabdulrauf5681@gmail.com</p><a onclick="copyEmail()"><svg fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" width="48">
+                            <path
+                                d="M180 975q-24 0-42-18t-18-42V342q0-12.75 8.675-21.375 8.676-8.625 21.5-8.625 12.825 0 21.325 8.625T180 342v573h444q12.75 0 21.375 8.675 8.625 8.676 8.625 21.5 0 12.825-8.625 21.325T624 975H180Zm120-120q-24 0-42-18t-18-42V235q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300Zm0-60h440V235H300v560Zm0 0V235v560Z">
+                        </svg></a>
                 </div>
             </div>
         </div>
@@ -100,19 +100,22 @@
             <h1 class="abt-h1">About Me</h1><img id="abt--img" alt="my about image" class="abt-img">
         </div>
         <div class="abtcontainer">
-            <strong class="abt-strong"><span>Transforming ideas into reality.</span>
-                Connecting to users and
+            <strong class="abt-strong"><span class="text_anim">Transforming ideas into reality.</span>
+                <b>Connecting to users and
                 crafting experiences based on
-                their needs and desires.</strong>
+                their needs and desires.</b></strong>
             <div class="abt-p-container">
-                <p class="abt-p" style="grid-area: top-area;">I am a UI/UX designer and frontend web developer with a passion for creating intuitive
+                <p class="abt-p text_anim" style="grid-area: top-area;">I am a UI/UX designer and frontend web developer with a
+                    passion for creating intuitive
                     and visually appealing digital experiences.</p>
-                <p class="abt-p" style="grid-area: mid-area;">I have a strong understanding of user-centered design
+                <p class="abt-p text_anim" style="grid-area: mid-area;">I have a strong understanding of user-centered design
                     principles and am skilled in using design tools such as Adobe XD, Figma and Webflow.</p>
-                <p class="abt-p" style="grid-area: mid-area2;"> I also have
+                <p class="abt-p text_anim" style="grid-area: mid-area2;"> I also have
                     expertise in frontend web development using technologies such as HTML, CSS, and JavaScript. I am
                     dedicated to creating responsive and accessible websites that provide a seamless user experience
-                    across all devices.</p><p class="abt-p" style="grid-area: btm-area;"> I help businesses to reach their goals by creating clean but catchy digital
+                    across all devices.</p>
+                <p class="abt-p text_anim" style="grid-area: btm-area;"> I help businesses to reach their goals by creating clean
+                    but catchy digital
                     solutions that have a personality.</p>
             </div>
         </div>
@@ -432,7 +435,7 @@
                     </a>
                     <a target="_blank"
                         href="https://mail.google.com/mail/u/1/#inbox?compose=CllgCKHQdGPqKnwzJGpSBsWhMVrrDFzdbXrHtckshVNQmBBNVsKLNcvlDJrjnBTRkxdQSXRDQjq"
-                        id="email" class="connect-icon"><svg width="34" height="28" viewBox="0 0 26 20" fill="none"
+                        class="connect-icon"><svg width="34" height="28" viewBox="0 0 26 20" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M26 2.5C26 1.125 24.83 0 23.4 0H2.6C1.17 0 0 1.125 0 2.5V17.5C0 18.875 1.17 20 2.6 20H23.4C24.83 20 26 18.875 26 17.5V2.5ZM23.4 2.5L13 8.75L2.6 2.5H23.4ZM23.4 17.5H2.6V5L13 11.25L23.4 5V17.5Z"
@@ -445,6 +448,12 @@
     </footer>
     <script src="media.js"></script>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"
+        integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="anim.js"></script>
 </body>
 
 </html>

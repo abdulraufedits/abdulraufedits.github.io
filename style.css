@@ -109,6 +109,16 @@ img{
   text-transform: uppercase;
   user-select: none;
 }
+
+
+.word{
+  clip-path: polygon(0 0, 120% 0, 120% 120%, 0% 120%);
+  transform: translateY(120%);
+}
+
+.line {
+  clip-path: polygon(0 0, 120% 0, 120% 120%, 0% 120%);
+}
 .devinfo h4 {
   font-size: 32px;
   font-weight: 300;
