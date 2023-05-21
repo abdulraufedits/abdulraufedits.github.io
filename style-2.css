@@ -24,7 +24,7 @@
   border-radius: 14px;
   aspect-ratio: 16/ 9;
   margin: 1rem 0rem;
-  padding: 20px 32px;
+
   transform: translateY(0px);
   transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
 

@@ -49,7 +49,7 @@
         flex-direction: column;
     }
     .projcontainer{
-        height: 40vh;
+        height: 56vh;
     }
     .contact-sec, .abt-wrapper, .skills-sec, .exp-sec, .abt-wrapper{
         padding: 2rem 2rem;
@@ -99,7 +99,11 @@
 }
 @media screen and (max-width: 530px) {
     .projcontainer{
-        height: 30vh;
+        height: 32vh;
+        margin: 16px 0px;
+    }
+    .project-sec .project-sec-grid{
+        gap: 0;
     }
     button.exp-info{
         padding: 12px;
@@ -151,7 +155,7 @@
 }
 @media screen and (max-width: 430px) {
     .projcontainer{
-        height: 20vh;
+        height: 22vh;
     }
     span.expert::before, span.inter::before, span.beginner::before{ display: none;}
     .abt-wrapper, .project-sec, .exp-sec, .skills-sec,.contact-sec{
@@ -187,12 +191,8 @@
 }
 
 @media screen and (max-width: 340px) {
-    .projcontainer{
-        height: 10vh;
-    }
-    .project-sec .project-sec-grid{
-        gap: 0;
-    }
+
+
     .devpic{
         height: 40vh;
     }
