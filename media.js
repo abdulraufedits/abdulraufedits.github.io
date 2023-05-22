@@ -20,3 +20,9 @@ let avi = document.querySelector(".devpic");
 
 abtImg.setAttribute("src","https://ik.imagekit.io/abduledits5/new_avi.jpg");
 avi.setAttribute("src","https://ik.imagekit.io/abduledits5/my_new_avi.png?updatedAt=1682079768854");
+
+var resumeCtas = document.querySelectorAll('.resume-cta');
+
+resumeCtas.forEach(resumeCta => {
+    resumeCta.setAttribute('href', 'https://drive.google.com/file/d/11n8qzFFQ6sJOhXVv5ZGnd5jywKzd0g-4/view?usp=sharing');
+});
