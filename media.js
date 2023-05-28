@@ -24,5 +24,5 @@ avi.setAttribute("src","https://ik.imagekit.io/abduledits5/my_new_avi.png?update
 var resumeCtas = document.querySelectorAll('.resume-cta');
 
 resumeCtas.forEach(resumeCta => {
-    resumeCta.setAttribute('href', 'https://drive.google.com/file/d/11n8qzFFQ6sJOhXVv5ZGnd5jywKzd0g-4/view?usp=sharing');
+    resumeCta.setAttribute('href', 'https://drive.google.com/file/d/14rS2xfC8g0YmlMekIK10SwwjzneulGtH/view?usp=sharing');
 });
