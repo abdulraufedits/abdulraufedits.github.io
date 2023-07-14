@@ -26,8 +26,8 @@ function gsapAnimation(elm){
 gsap.to(document.querySelectorAll('.name .line .word'),{
   // yes, we can add it to an entire timeline!
   y: 0 ,
-  stagger: 0.045,
+  stagger: 0.039,
   delay: 0.2,
-  duration: 0.6,
+  duration: 0.4,
   ease: "circ.inOut"
 });

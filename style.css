@@ -2,7 +2,7 @@
 
 /* font-family: 'Poppins', sans-serif; */
 html {
-  --primary-font: "Plus Jakarta Sans", "sans serif";
+  --primary-font: "Plus Jakarta Sans","Nohemi", "sans serif";
   --secondary-font: "Spline Sans Mono", "monospace";
   --white: #ffffff;
   --black: #050505;
@@ -12,13 +12,14 @@ html {
   --white-06: #a5a5a5;
   --white-07: #efefef;
   --white-08: #f6f6f6;
-  --blue: #0065ea;
+  --blue: #6da9f7;
   --blue-second: #d7e1f0;
   --yellow: #ebab23;
   --green: #52df11;
   --primary-gradient: linear-gradient(60deg, #302DCB, #651CE3 );
   transition: all 0.5s ease;
   scroll-behavior: smooth;
+  --letter-spacing: -0.045em;
 }
 html.second{
   --white: #050505;
@@ -61,56 +62,66 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: var(--black);
 }
 button{
-  font-family: 'Plus Jakarta Sans';
+  font-family: var(--primary-font);
 }
 img{
   pointer-events: none;
 }
 .container {
   background-color: var(--white);
-  /* width: 100%; */
-  min-height: 100vh;
-  padding: 0px 3rem;
-}
-.infocontainer{
-  padding: 3rem 3rem;
+  color: var(--black);
 }
 .devinfo{
+  display: grid;
+  row-gap: 2.4rem;
+  background-color: var(--white);
+  padding: 3rem 6rem;
+}
+.devinfo header{
   display: flex;
   align-items: center;
   gap: 3rem;
-}
-.hello {
-  color: var(--black);
-  font-size: 1rem;
-  font-weight: 600;
-  font-family: var(--primary-font);
-}
-.devpic{
-  height: 85vh;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 14px;
-}
-.devpics{
-  width: 150vw;
-  position: relative;
-  display: flex;
+  font-size: 21px;
+  font-weight: 500;
+  letter-spacing: var(--letter-spacing);
 }
 .name {
   color: var(--black);
-  font-size: 4rem;
-  font-weight: 700;
-  line-height: 0.8;
-  letter-spacing: -0.05em;
-  margin: 2rem 0;
+  font-size: calc(32px + 2vw);
+  font-weight: 500;
+  line-height: 140% ;
+  letter-spacing: var(--letter-spacing);
   text-transform: uppercase;
   user-select: none;
+  position: relative;
 }
 
-
+.highlight::before{
+  content: "";
+  position: absolute;
+  height: 4px;
+  top: 90%;
+  animation: slide 0.5s forwards cubic-bezier(0.860, 0.000, 0.070, 1.000);
+}
+@keyframes slide {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 100%;
+  }
+}
+.highlight.hg1::before{
+  background-color: var(--blue);
+  animation-delay: 1s;
+}
+.highlight.hg2::before{
+  background-color: var(--yellow);
+  animation-delay: 1.2s;
+}
 .word{
   clip-path: polygon(0 0, 120% 0, 120% 120%, 0% 120%);
   transform: translateY(120%);
@@ -119,41 +130,22 @@ img{
 .line {
   clip-path: polygon(0 0, 120% 0, 120% 120%, 0% 120%);
 }
-.devinfo h4 {
-  font-size: 32px;
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -0.05em;
-  margin-bottom: 2rem;
-  text-transform: uppercase;
-  user-select: none;
-}
-.devinfo p{
-  color: var(--black);
-  line-height: 1.9;
-  width: 80%;
-  opacity: 0.7;
-}
 .ctas {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 2rem;
   gap: 1rem;
 }
 .cta {
   background: var(--black);
-  padding: 14px 26px;
+  padding: 16px 32px;
   color: var(--white);
   border: 1px solid var(--white-06);
   border-radius: 42px;
   display: flex;
+  gap: 0.5rem;
   align-items: center;
-  justify-content: space-between;
-  gap: 0.7rem;
-  cursor: pointer;
   font-weight: 500;
   font-size: 0.86rem;
-  font-family: var(--primary-font);
   transition: 0.6s cubic-bezier(0.165, 0.840, 0.440, 1.000);
 }
 .primary-cta:hover , .primary-cta:active{
@@ -173,25 +165,35 @@ img{
   background-color: var(--white-07);
 }
 .email-view{
-  padding: 14px;
+  padding: 16px;
   width: fit-content !important;
 }
 
 .abtcontainer{
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 3rem;
 }
 .abt-head{
   display: flex;
   gap: 48px;
+}
+.abtcontainer h4 {
+  font-size: 42px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: var(--letter-spacing);
+  display: flex;
+  flex-wrap: wrap;
+  text-transform: uppercase;
+  user-select: none;
 }
 h1.abt-h1, h1.proj-h1, h1.skill-h1, h1.exp-h1{
   color: var(--black);
   font-size: 40px;
   line-height: 1.2;
   font-weight: 500;
-  letter-spacing: -0.05em;
+  letter-spacing: var(--letter-spacing);
   user-select: none;
 }
 img.abt-img{
@@ -201,7 +203,7 @@ img.abt-img{
 }
 strong.abt-strong{
   color: var(--black);
-  font-size: calc(2vw + 10px);
+  font-size: calc(2vw + 10px); 
   font-weight: 700;
 }
 strong.abt-strong > span{
@@ -209,6 +211,7 @@ strong.abt-strong > span{
   font-size: calc(9vw + 14px);
   margin-bottom: 1rem;
   line-height: 110%;
+  letter-spacing: var(--letter-spacing);
 }
 .abt-p-container{
   display: grid;

@@ -67,5 +67,3 @@ var emailBox = document.getElementById("email_box");
 function previewEmail(){
   emailBox.classList.toggle("on");
 }
-
-

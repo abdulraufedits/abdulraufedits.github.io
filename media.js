@@ -19,7 +19,6 @@ let abtImg = document.getElementById('abt--img');
 let avi = document.querySelector(".devpic");
 
 abtImg.setAttribute("src","https://ik.imagekit.io/abduledits5/new_avi.jpg");
-avi.setAttribute("src","https://ik.imagekit.io/abduledits5/my_new_avi.png?updatedAt=1682079768854");
 
 var resumeCtas = document.querySelectorAll('.resume-cta');
 

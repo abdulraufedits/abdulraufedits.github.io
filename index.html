@@ -29,8 +29,9 @@
                 <li class="nav__list-item"><a style="transition-delay: 0.6s;" href="#proj--sec">My Work</a></li>
                 <li class="nav__list-item"><a style="transition-delay: 0.7s;" href="#skill--sec">My Skills</a></li>
                 <li class="nav__list-item"><a style="transition-delay: 0.8s;" href="#contact--sec">Contact Me</a></li>
-                <li class="nav__list-item"><a class="resume-cta" style="transition-delay: 0.9s;" target="_blank">Resume<svg
-                            class="menu-resume-svg" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <li class="nav__list-item"><a class="resume-cta" style="transition-delay: 0.9s;"
+                        target="_blank">Resume<svg class="menu-resume-svg" viewBox="0 0 12 11" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M9.60854 8.18416L10.1176 3.6023L1.43727 10.5466L0.562693 9.45338L9.24306 2.50909L4.66121 1.99999L4.81581 0.608555L11.0773 1.28L11.77 1.36719L11.6957 2.07729L11 8.33876L9.60854 8.18416Z"
                                 fill="currentColor" />
@@ -49,74 +50,44 @@
         <div class="infocontainer">
 
             <div class="devinfo">
-                <div class="devpics">
-                    <img alt="my avi" class="devpic">
-                </div>
-                <div>
-                    <h3 class="hello">Oh, Hello there!</h3>
-                    <h1 class="name text_anim">It's Abdul Rauf</h1>
-                    <h4><span style="color: var(--blue);">UI/UX Designer</span> &nbsp;<span
-                            style="color: var(--yellow);">Frontend Developer</span></h4>
-                    <p>I'm a UI/UX designer and a frontend web developer with a strong background in creating digital experiences. With over 2 years of experience in the industry, I have honed my skills in
-                        both design and development to create seamless, user-friendly interfaces that are both visually
-                        appealing and functional.</p>
-                    <div class="ctas">
-                        <a href="contact.html"><button class="primary-cta cta">Contact Me</button></a>
-                        <a class="resume-cta" target="_blank"><button class="secondary-cta cta">Resume
-                                <svg width="14" height="13" viewBox="0 0 12 11" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M9.60854 8.18416L10.1176 3.6023L1.43727 10.5466L0.562693 9.45338L9.24306 2.50909L4.66121 1.99999L4.81581 0.608555L11.0773 1.28L11.77 1.36719L11.6957 2.07729L11 8.33876L9.60854 8.18416Z"
-                                        fill="currentColor" />
-                                </svg></button></a>
-                        <button onclick="previewEmail()" class="email-view primary-cta cta"><svg width="18" height="14"
-                                viewBox="0 0 26 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <header>
+                    <strong>Abdul Rauf</strong>
+                    <span style="background-color: var(--black-06);width: 6px; height: 6px; border-radius: 50px;"></span>
+                    <a target="_blank" href="https://www.instagram.com/abdulraufedits">Instagram</a>
+                    <a target="_blank" href="https://behance.net/abdulraufedits">Behance</a>
+                    <a target="_blank" href="https://www.linkedin.com/in/abdulraufedits">LinkedIn</a>
+                </header>
+                <h1 class="name text_anim">I'm a <span class="highlight hg1">UI/UX</span> <span class="highlight hg1">designer</span> and a <span class="highlight hg2">frontend</span> <span class="highlight hg2">web</span> <span class="highlight hg2">developer</span> with a strong background in creating digital experiences.</h1>
+                <div class="ctas">
+                    <a href="contact.html"><button class="primary-cta cta">Contact Me</button></a>
+                    <a class="resume-cta" target="_blank"><button class="secondary-cta cta">Resume
+                            <svg width="14" height="13" viewBox="0 0 12 11" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
                                 <path
-                                    d="M26 2.5C26 1.125 24.83 0 23.4 0H2.6C1.17 0 0 1.125 0 2.5V17.5C0 18.875 1.17 20 2.6 20H23.4C24.83 20 26 18.875 26 17.5V2.5ZM23.4 2.5L13 8.75L2.6 2.5H23.4ZM23.4 17.5H2.6V5L13 11.25L23.4 5V17.5Z"
+                                    d="M9.60854 8.18416L10.1176 3.6023L1.43727 10.5466L0.562693 9.45338L9.24306 2.50909L4.66121 1.99999L4.81581 0.608555L11.0773 1.28L11.77 1.36719L11.6957 2.07729L11 8.33876L9.60854 8.18416Z"
                                     fill="currentColor" />
-                            </svg></button>
+                            </svg></button></a>
+                    <button onclick="previewEmail()" class="email-view primary-cta cta"><svg width="18" height="14"
+                            viewBox="0 0 26 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M26 2.5C26 1.125 24.83 0 23.4 0H2.6C1.17 0 0 1.125 0 2.5V17.5C0 18.875 1.17 20 2.6 20H23.4C24.83 20 26 18.875 26 17.5V2.5ZM23.4 2.5L13 8.75L2.6 2.5H23.4ZM23.4 17.5H2.6V5L13 11.25L23.4 5V17.5Z"
+                                fill="currentColor" />
+                        </svg></button>
+                </div>
+                <div id="email_box">
+
+                    <div>
+                        <p id="email">editsabdulrauf5681@gmail.com</p><a onclick="copyEmail()"><svg fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" width="48">
+                                <path
+                                    d="M180 975q-24 0-42-18t-18-42V342q0-12.75 8.675-21.375 8.676-8.625 21.5-8.625 12.825 0 21.325 8.625T180 342v573h444q12.75 0 21.375 8.675 8.625 8.676 8.625 21.5 0 12.825-8.625 21.325T624 975H180Zm120-120q-24 0-42-18t-18-42V235q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300Zm0-60h440V235H300v560Zm0 0V235v560Z">
+                            </svg></a>
                     </div>
                 </div>
             </div>
-            <div id="email_box">
-
-                <div>
-                    <p id="email">editsabdulrauf5681@gmail.com</p><a onclick="copyEmail()"><svg fill="currentColor"
-                            xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" width="48">
-                            <path
-                                d="M180 975q-24 0-42-18t-18-42V342q0-12.75 8.675-21.375 8.676-8.625 21.5-8.625 12.825 0 21.325 8.625T180 342v573h444q12.75 0 21.375 8.675 8.625 8.676 8.625 21.5 0 12.825-8.625 21.325T624 975H180Zm120-120q-24 0-42-18t-18-42V235q0-24 18-42t42-18h440q24 0 42 18t18 42v560q0 24-18 42t-42 18H300Zm0-60h440V235H300v560Zm0 0V235v560Z">
-                        </svg></a>
-                </div>
-            </div>
         </div>
 
     </div>
-    </div>
-    <main class="abt-wrapper" id="abt--sec">
-        <div class="abt-head">
-            <h1 class="abt-h1">About Me</h1><img id="abt--img" alt="my about image" class="abt-img">
-        </div>
-        <div class="abtcontainer">
-            <strong class="abt-strong"><span>Transforming ideas into reality.</span>
-                <b>Connecting to users and
-                crafting experiences based on
-                their needs and desires.</b></strong>
-            <div class="abt-p-container">
-                <p class="abt-p" style="grid-area: top-area;">I am a UI/UX designer and frontend web developer with a
-                    passion for creating intuitive
-                    and visually appealing digital experiences.</p>
-                <p class="abt-p" style="grid-area: mid-area;">I have a strong understanding of user-centered design
-                    principles and am skilled in using design tools such as Adobe XD, Figma and Webflow.</p>
-                <p class="abt-p" style="grid-area: mid-area2;"> I also have
-                    expertise in frontend web development using technologies such as HTML, CSS, and JavaScript. I am
-                    dedicated to creating responsive and accessible websites that provide a seamless user experience
-                    across all devices.</p>
-                <p class="abt-p" style="grid-area: btm-area;"> I help businesses to reach their goals by creating clean
-                    but catchy digital
-                    solutions that have a personality.</p>
-            </div>
-        </div>
-    </main>
     <!-- project sec -->
     <main class="project-sec section">
         <div class="sidebar-2" id="proj--sec">
@@ -228,6 +199,33 @@
                 </div>
             </section>
         </article>
+    </main>
+    <!-- abt sec -->
+    <main class="abt-wrapper" id="abt--sec">
+        <div class="abt-head">
+            <h1 class="abt-h1">About Me</h1><img id="abt--img" alt="my about image" class="abt-img">
+        </div>
+        <div class="abtcontainer">
+            <h4><span style="color: var(--blue);">UI/UX DESIGNER</span>&nbsp;<span style="color: var(--yellow);">FRONTEND DEVELOPER</span></h4>
+            <strong class="abt-strong"><span>Transforming ideas into reality.</span>
+                <b>Connecting to users and
+                    crafting experiences based on
+                    their needs and desires.</b></strong>
+            <div class="abt-p-container">
+                <p class="abt-p" style="grid-area: top-area;">I am a UI/UX designer and frontend web developer with a
+                    passion for creating intuitive
+                    and visually appealing digital experiences.</p>
+                <p class="abt-p" style="grid-area: mid-area;">I have a strong understanding of user-centered design
+                    principles and am skilled in using design tools such as Adobe XD, Figma and Webflow.</p>
+                <p class="abt-p" style="grid-area: mid-area2;"> I also have
+                    expertise in frontend web development using technologies such as HTML, CSS, and JavaScript. I am
+                    dedicated to creating responsive and accessible websites that provide a seamless user experience
+                    across all devices.</p>
+                <p class="abt-p" style="grid-area: btm-area;"> I help businesses to reach their goals by creating clean
+                    but catchy digital
+                    solutions that have a personality.</p>
+            </div>
+        </div>
     </main>
     <!-- experiences sec -->
     <main class="exp-sec section">

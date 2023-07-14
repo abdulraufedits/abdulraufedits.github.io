@@ -22,7 +22,7 @@
   align-items: center;
   gap: 8px;
   border-radius: 14px;
-  aspect-ratio: 16/ 9;
+  aspect-ratio: 16/ 12.6;
   margin: 1rem 0rem;
 
   transform: translateY(0px);
@@ -58,7 +58,6 @@
 .connect-container{
   background-color: #050505;
   padding: 0rem 3rem;
-
 }
 .connect-container .connect-wrapper{
   padding-top: 3rem;
@@ -72,7 +71,7 @@ button.connect-cta {
   padding: 20px 40px;
   font-size: 24px;
   font-weight: 600;
-  letter-spacing: -0.05em;
+  letter-spacing: var(--letter-spacing);
   cursor: pointer;
   overflow: hidden;
   position: relative;
@@ -87,7 +86,7 @@ strong{
   width: 100%;
   left: 0;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   transform: translateY(100%);
 }
 .connect-icons a{
@@ -170,7 +169,7 @@ button.exp-info::before{
 h2.exp-name{
   color: var(--black);
   font-size: 5vw;
-  letter-spacing: -0.05em;
+  letter-spacing: var(--letter-spacing);
   font-weight: 400;
   margin-bottom: 1.3rem;
 }

@@ -2,63 +2,39 @@
     strong.abt-strong{
         font-size: calc(3vw - 1px);
     }
-    .devpics::after{
-        display: none;
+    .name{
+        font-size: calc(36px + 2vw);
     }
 }
 @media screen and (max-width: 900px) {
-    .devinfo p{
-        width: auto;
-    }
-    .devpics{
-        width: 80vw;
-    }
     .abt-wrapper{
         align-items: stretch;
     }
     .abtcontainer{
         width: 100%;
     }
-    .project-sec{
+    .project-sec, .contact-sec, .abt-wrapper, .skills-sec, .exp-sec, .abt-wrapper{
         padding: 2rem 2rem;
+    }
+    .devinfo{
+        padding: 3rem 2rem 2rem 2rem;
     }
     .project-sec .project-sec-grid{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
     }
-    .projcontainer{
-        height: 25vh;
-        aspect-ratio: initial;
-    }
-    .infocontainer .devinfo{
-        flex-direction: column;
-    }
-    .devinfo h4{
-        width: auto;
-        font-size: 24px;
-        padding: 1rem 0rem 1rem 0rem;
-    }
     p.abt-p{
         width: auto;
     }
 }
 @media screen and (max-width: 720px) {
+    .name{
+        font-size: 6.8vw;
+    }
     .project-sec .project-sec-grid{
         display: flex;
         flex-direction: column;
-    }
-    .projcontainer{
-        height: 56vh;
-    }
-    .contact-sec, .abt-wrapper, .skills-sec, .exp-sec, .abt-wrapper{
-        padding: 2rem 2rem;
-    }
-    .container.home{
-        padding: 1rem 2rem;
-    }
-    .infocontainer{
-        padding: 3rem 0rem;
     }
     h2.exp-name{
         font-size: calc(3vw + 16px);
@@ -85,6 +61,9 @@
         display: flex;
         flex-direction: column;
     }
+    .devinfo header a, .devinfo header span{
+        display: none;
+    }
 }
 @media screen and (max-width: 690px) {
     strong.abt-strong{
@@ -96,11 +75,14 @@
     .nav-wrapper > span{
         display: none;
     }
+    .abtcontainer h4{
+        font-size: 24px;
+
+    }
 }
 @media screen and (max-width: 530px) {
-    .projcontainer{
-        height: 32vh;
-        margin: 16px 0px;
+    .name{
+        font-size: 32px;
     }
     .project-sec .project-sec-grid{
         gap: 0;
@@ -136,12 +118,6 @@
     .menu-icon, .theme-cta{
         right: 20px;
     }
-    .hello{
-        font-size: 20px;
-    }
-    .devpic{
-        height: 56vh;
-    }
     .nav-content{
         padding: 0px;
         justify-content: end;
@@ -154,15 +130,12 @@
     }
 }
 @media screen and (max-width: 430px) {
-    .projcontainer{
-        height: 22vh;
-    }
     span.expert::before, span.inter::before, span.beginner::before{ display: none;}
     .abt-wrapper, .project-sec, .exp-sec, .skills-sec,.contact-sec{
         padding: 2rem 1rem;
     }
-    .container.home{
-        padding: 1rem;
+    .devinfo {
+        padding: 3rem 1rem 2rem 1rem;
     }
     .connect-container{
         padding: 0rem 1rem;
@@ -191,11 +164,6 @@
 }
 
 @media screen and (max-width: 340px) {
-
-
-    .devpic{
-        height: 40vh;
-    }
     .ctas{
         flex-direction: column;
     }
