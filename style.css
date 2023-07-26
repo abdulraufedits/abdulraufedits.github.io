@@ -136,6 +136,7 @@ img{
   gap: 1rem;
 }
 .cta {
+  cursor: pointer;
   background: var(--black);
   padding: 16px 32px;
   color: var(--white);
