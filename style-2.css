@@ -86,8 +86,9 @@ strong{
   width: 100%;
   left: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   transform: translateY(100%);
+  gap: 2%;
 }
 .connect-icons a{
   color: #ffffff;

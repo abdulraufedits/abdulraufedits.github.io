@@ -190,10 +190,11 @@
 /* contact sec  */
 @media screen and (max-width:1024px) {
     p.contact-p{
-        font-size: calc(4vw - 12px);
+        font-size: 3vw;
     }
     .contact-p input{
-        width: 80%;
+        width: 84%;
+        margin: 8px 0;
     }
     .wrapper1{
         box-sizing: border-box;
@@ -219,26 +220,17 @@
     h1.contact{
         font-size: 2.4rem;
     }
-    .contact-p input::placeholder{
-        font-size: calc(4vw - 12px);
-    }
     .contact-head p{
         margin-top: 1.5rem;
     }
 
 }
 @media screen and (max-width: 610px) {
-    p.contact-p{
-        font-size: 20px;
-    }
-    .wrapper1{
-        padding: 0px;
+    p.contact-p, .contact-p input{
+        font-size: 16px;
     }
     .contact-p input::placeholder{
         font-size: 12px;
-    }
-    .contact-p input{
-        width: 60%;
     }
     .contact-head strong{
         font-size: 2rem;
@@ -253,14 +245,11 @@
     .devinfo1{
         flex-direction: column;
     }
+    .wrapper1{
+        padding: 0 2rem 0 1rem;
+    }
 }
 @media screen and (max-width: 380px) {
-    p.contact-p{
-        font-size: 16px;
-    }
-    .contact-p input{
-        font-size: 16px;
-    }
     h1.contact{
         width: 60%;
     }
