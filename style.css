@@ -231,7 +231,7 @@ strong.abt-strong > span{
   row-gap: 6rem;
 }
 
-p.faded-p{
+.faded-p{
   color: var(--black);
   font-size: 18px;
   line-height: 180%;
