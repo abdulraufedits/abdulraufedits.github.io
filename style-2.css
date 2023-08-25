@@ -11,6 +11,7 @@
 .proj-wrapper{
   padding: 0;
   gap: 0;
+  background-color: var(--white);
 }
 .proj-wrapper #proj--sec{
   padding: 2rem 6rem;
@@ -27,6 +28,7 @@
 .proj-h2{
   font-size: 48px;
   letter-spacing: var(--letter-spacing);
+  color: var(--black);
 }
 .projcontainer .faded-p{
   margin-bottom: auto;
