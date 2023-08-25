@@ -23,7 +23,7 @@
     .section, .proj-wrapper #proj--sec, .project-sec, .contact-sec{
         padding: 3rem 2rem;
     }
-    p.abt-p{
+    p.faded-p{
         width: auto;
     }
 }
