@@ -18,7 +18,7 @@ html {
   --primary-gradient: linear-gradient(60deg, #302DCB, #651CE3 );
   transition: all 0.5s ease;
   scroll-behavior: smooth;
-  --letter-spacing: -0.045em;
+  --letter-spacing: -0.025em;
 }
 html.second{
   --white: #050505;
@@ -59,15 +59,18 @@ body {
 a {
   text-decoration: none;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--black);
+  color: inherit;
 }
 button{
   font-family: var(--primary-font);
 }
 img{
   pointer-events: none;
+}
+hr{
+  opacity: 0.7;
+  background-color: #999999;
+  height: 1px;
 }
 .container {
   background-color: var(--white);
@@ -77,7 +80,6 @@ img{
   display: grid;
   row-gap: 2.4rem;
   background-color: var(--white);
-  padding: 3rem 6rem;
 }
 .devinfo header{
   display: flex;
@@ -156,6 +158,12 @@ img{
 .contact-cta{
   padding: 24px 32px;
   font-size: 1.1rem;
+  background-color: #ffffff;
+  color: #050505;
+}
+.contact-cta:hover, .contact-cta:active{
+  background-color: #050505;
+  color: #ffffff;
 }
 .secondary-cta{
   background: var(--white);
@@ -223,7 +231,7 @@ strong.abt-strong > span{
   row-gap: 6rem;
 }
 
-p.abt-p{
+p.faded-p{
   color: var(--black);
   font-size: 18px;
   line-height: 180%;
@@ -237,14 +245,7 @@ p.abt-p{
   padding: 2rem 6rem;
   display: flex;
   justify-content: space-between;
-}
-.contact-sec .cta{
-  background-color: #ffffff;
-  color: #050505;
-}
-.contact-sec .cta:hover, .contact-sec .cta:active{
-  background-color: #050505;
-  color: #ffffff;
+  align-items: center;
 }
 .contact-head{
   width: 50%;

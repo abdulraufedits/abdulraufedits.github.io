@@ -56,6 +56,9 @@
   margin-left: 1rem;
   height: 2.4rem;
 }
+.resume-cta{
+  align-items: center;
+}
 .nav-content{
   height: 100%;
   display: flex;

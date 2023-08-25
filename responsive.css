@@ -5,6 +5,13 @@
     .name{
         font-size: calc(36px + 2vw);
     }
+    .project-sec{
+        flex-direction: column-reverse;
+        row-gap: 2rem;
+    }
+    .proj-img{
+        height: auto;
+    }
 }
 @media screen and (max-width: 900px) {
     .abt-wrapper{
@@ -13,16 +20,8 @@
     .abtcontainer{
         width: 100%;
     }
-    .project-sec, .contact-sec, .abt-wrapper, .skills-sec, .exp-sec, .abt-wrapper{
-        padding: 2rem 2rem;
-    }
-    .devinfo{
-        padding: 3rem 2rem 2rem 2rem;
-    }
-    .project-sec .project-sec-grid{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
+    .section, .proj-wrapper #proj--sec, .project-sec, .contact-sec{
+        padding: 3rem 2rem;
     }
     p.abt-p{
         width: auto;
@@ -31,10 +30,6 @@
 @media screen and (max-width: 720px) {
     .name{
         font-size: 6.8vw;
-    }
-    .project-sec .project-sec-grid{
-        display: flex;
-        flex-direction: column;
     }
     h2.exp-name{
         font-size: calc(3vw + 16px);
@@ -69,7 +64,7 @@
     strong.abt-strong{
         font-size: 24px;
     }
-    .project-sec, .exp-sec, .skills-sec{
+    .exp-sec, .skills-sec{
         gap: 32px;
     }
     .nav-wrapper > span{
@@ -87,8 +82,8 @@
     .name{
         font-size: 32px;
     }
-    .project-sec .project-sec-grid{
-        gap: 0;
+    .proj-h2{
+        font-size: 32px;
     }
     button.exp-info{
         padding: 12px;
@@ -133,12 +128,12 @@
     }
 }
 @media screen and (max-width: 430px) {
-    span.expert::before, span.inter::before, span.beginner::before{ display: none;}
-    .abt-wrapper, .project-sec, .exp-sec, .skills-sec,.contact-sec{
-        padding: 2rem 1rem;
+    .section,.contact-sec, .proj-wrapper #proj--sec{
+        padding: 1.2rem;
+        padding-top: 3rem;
     }
-    .devinfo {
-        padding: 3rem 1rem 2rem 1rem;
+    .project-sec{
+        padding: 1.2rem;
     }
     .connect-container{
         padding: 0rem 1rem;
