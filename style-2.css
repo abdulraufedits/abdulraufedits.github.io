@@ -15,6 +15,9 @@
 }
 .proj-wrapper #proj--sec{
   padding: 2rem 6rem;
+  display: flex;
+  column-gap: 2rem;
+  align-items: center;
 }
 .project-sec {
   display: flex;
@@ -37,6 +40,17 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
+}
+.proj-redirect span{
+  padding: 12px 20px;
+  border-radius: 10px;
+  background-color: var(--blue);
+  color: #fff;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+.proj-redirect:hover span{
+  background-color: var(--blue-hover);
 }
 .proj-cta{
   padding: 18px 28px;

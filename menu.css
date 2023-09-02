@@ -131,7 +131,7 @@
 
 /* media queries  */
 
-@media screen and (width <= 900px) {
+@media screen and (width <= 720px) {
   .nav__list .nav__list-item {
     font-size: 3rem;
   }
@@ -144,24 +144,24 @@
   .nav-wrapper > span {
     display: none;
   }
-}
-
-@media screen and (width <= 530px) {
-  .menu-icon,
-  .theme-cta {
-    right: 20px;
+  .nav-wrapper {
+    padding: 0px 2rem;
   }
   .nav-content {
     padding: 0px;
     justify-content: end;
     gap: 3rem;
   }
-  .nav-wrapper {
-    padding: 0px 2rem;
-  }
   .smlinks {
     margin-bottom: 2rem;
     margin-top: 30%;
+  }
+}
+
+@media screen and (width <= 530px) {
+  .menu-icon,
+  .theme-cta {
+    right: 20px;
   }
 }
 
