@@ -46,12 +46,6 @@
     h2.app-name{
         font-size: 16px;
     }
-    .nav__list .nav__list-item{
-        font-size: 3rem;
-    }
-    .menu-resume-svg{
-        height: 2rem;
-    }
     .skills-sec .skill-wrapper{
         display: flex;
         flex-direction: column;
@@ -67,9 +61,7 @@
     .exp-sec, .skills-sec{
         gap: 32px;
     }
-    .nav-wrapper > span{
-        display: none;
-    }
+
     .abtcontainer h4{
         font-size: 24px;
 
@@ -113,19 +105,6 @@
     button.connect-cta{
         padding: 20px 0px;
     }
-    .menu-icon, .theme-cta{
-        right: 20px;
-    }
-    .nav-content{
-        padding: 0px;
-        justify-content: end;
-        gap: 3rem;
-    }
-    .nav-wrapper{padding: 0px 2rem;}
-    .smlinks{
-        margin-bottom: 2rem;
-        margin-top: 30%;
-    }
 }
 @media screen and (max-width: 430px) {
     .section,.contact-sec, .proj-wrapper #proj--sec{
@@ -152,13 +131,6 @@
     #email_box div p{
         font-size: 0.9rem;
     }
-    .nav__list .nav__list-item{
-        font-size: 36px;
-        margin-bottom: 2rem;
-    }
-    .menu-resume-svg{
-        height: 21px;
-    }
 }
 
 @media screen and (max-width: 340px) {
@@ -173,12 +145,6 @@
     }
     #email_box div svg{
         display: none;
-    }
-    .smlinks{
-        flex-direction: column;
-        align-items: start;
-        gap: 14px;
-        margin-top: 20%;
     }
 }
 
