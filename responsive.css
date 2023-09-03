@@ -20,11 +20,15 @@
     .abtcontainer{
         width: 100%;
     }
-    .section, .proj-wrapper #proj--sec, .project-sec, .contact-sec{
+    .section, .proj-wrapper, .project-sec, .contact-sec{
         padding: 3rem 2rem;
     }
     .faded-p{
         width: auto;
+    }
+    .project-sec{
+        padding: 2rem;
+        margin: 0 -2rem;
     }
 }
 @media screen and (max-width: 720px) {
@@ -107,12 +111,13 @@
     }
 }
 @media screen and (max-width: 430px) {
-    .section,.contact-sec, .proj-wrapper #proj--sec{
+    .section,.contact-sec, .proj-wrapper{
         padding: 1.2rem;
         padding-top: 3rem;
     }
     .project-sec{
         padding: 1.2rem;
+        margin: 0 -1.2rem;
     }
     .connect-container{
         padding: 0rem 1rem;
