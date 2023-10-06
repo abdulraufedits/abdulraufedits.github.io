@@ -5,7 +5,7 @@ abtImg.setAttribute("src","https://ik.imagekit.io/abduledits5/new_avi.jpg");
 var resumeCtas = document.querySelectorAll('.resume-cta');
 
 resumeCtas.forEach(resumeCta => {
-    resumeCta.setAttribute('href', 'https://drive.google.com/file/d/1-mEt484xd8kgg1HROkMxMibXbZBm8GCF/view?usp=sharing');
+    resumeCta.setAttribute('href', 'https://drive.google.com/file/d/1cnYt2ffqTcu_moa8PS-YTSzIuChMC3vR/view?usp=sharing');
 });
 
 let projImgs = document.querySelectorAll('.proj-img');
