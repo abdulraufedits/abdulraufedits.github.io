@@ -3,14 +3,7 @@
         font-size: calc(3vw - 1px);
     }
     .name{
-        font-size: calc(36px + 2vw);
-    }
-    .project-sec{
-        flex-direction: column-reverse;
-        row-gap: 2rem;
-    }
-    .proj-img{
-        height: auto;
+        font-size: calc(42px + 2vw);
     }
 }
 @media screen and (max-width: 900px) {
@@ -20,20 +13,16 @@
     .abtcontainer{
         width: 100%;
     }
-    .section, .proj-wrapper, .project-sec, .contact-sec{
-        padding: 3rem 2rem;
+    .section, .proj-wrapper, .contact-sec{
+        padding: 2rem;
     }
     .faded-p{
         width: auto;
     }
-    .project-sec{
-        padding: 2rem;
-        margin: 0 -2rem;
-    }
 }
 @media screen and (max-width: 720px) {
     .name{
-        font-size: 6.8vw;
+        font-size: 7.4vw;
     }
     h2.exp-name{
         font-size: calc(3vw + 16px);
@@ -78,8 +67,13 @@
     .name{
         font-size: 32px;
     }
-    .proj-h2{
-        font-size: 32px;
+    .devinfo{
+        gap: 1.4rem;
+    }
+    .name + p{
+        font-size: 24px;
+        margin-bottom: 2rem;
+        width: auto;
     }
     button.exp-info{
         padding: 12px;
@@ -109,15 +103,15 @@
     button.connect-cta{
         padding: 20px 0px;
     }
+    .projcontainer{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
 }
 @media screen and (max-width: 430px) {
     .section,.contact-sec, .proj-wrapper{
-        padding: 1.2rem;
-        padding-top: 3rem;
-    }
-    .project-sec{
-        padding: 1.2rem;
-        margin: 0 -1.2rem;
+        padding:2rem  1.2rem;
     }
     .connect-container{
         padding: 0rem 1rem;
@@ -130,12 +124,6 @@
         flex-direction: column;
         gap: 8px;
     }
-    #email_box{
-        padding: 1rem;
-    }
-    #email_box div p{
-        font-size: 0.9rem;
-    }
 }
 
 @media screen and (max-width: 340px) {
@@ -147,9 +135,6 @@
     }
     .appcontainer{
         gap: 0.8rem;
-    }
-    #email_box div svg{
-        display: none;
     }
 }
 

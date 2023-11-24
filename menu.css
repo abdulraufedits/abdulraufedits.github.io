@@ -7,8 +7,8 @@
   right: 50px;
   top: 30px;
   cursor: pointer;
-  background-color: var(--black);
-  padding: 20px;
+  /* background-color: var(--black); */
+  /* padding: 20px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,16 +18,16 @@
   height: 2px;
   width: 30px;
   display: block;
-  background-color: var(--white);
+  background-color: var(--black);
   margin-bottom: 4px;
   transition: transform 0.2s ease, background-color 0.5s ease;
 }
 .menu-icon.menu_active .menu-icon__line-up {
-  background-color: var(--white);
+  background-color: var(--black);
   transform: rotate(-45deg) translate(-3px, 3px);
 }
 .menu-icon.menu_active .menu-icon__line-down {
-  background-color: var(--white);
+  background-color: var(--black);
   transform: rotate(45deg);
 }
 .nav-wrapper {
@@ -92,7 +92,7 @@
 }
 .theme-cta {
   position: fixed;
-  right: 50px;
+  left: 50px;
   top: 30px;
   height: 66px;
   width: 66px;
@@ -103,8 +103,6 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  transform: translateX(0px);
-  transition: transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .theme-cta::before {
   content: "";
@@ -113,10 +111,6 @@
   border-radius: 50%;
   box-shadow: 12px 0px 0 0 var(--black);
   transform: translateX(-12px);
-}
-.theme-cta.menu_active {
-  transform: translateX(-130%);
-  transition: transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .smlinks {
   display: flex;

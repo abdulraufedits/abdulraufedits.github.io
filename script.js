@@ -62,15 +62,10 @@ function menuInactive(){
 
 menuInactive();
 
-var emailBox = document.getElementById("email_box");
-
-function previewEmail(){
-  emailBox.classList.toggle("on");
-}
-
-let email = document.getElementById('email');
-let emailBtn = document.querySelector('#email_box button[onclick="copyTxt()"]');
-function copyTxt(){
-  navigator.clipboard.writeText(email.textContent);
-  emailBtn.innerHTML += "copied!"
-}
+// Clipboard API
+// let email = document.getElementById('email');
+// let emailBtn = document.querySelector('#email_box button[onclick="copyTxt()"]');
+// function copyTxt(){
+//   navigator.clipboard.writeText(email.textContent);
+//   emailBtn.innerHTML += "copied!"
+// }

@@ -1,5 +1,5 @@
 .section {
-  padding: 3rem 6rem;
+  padding: 2rem 6rem;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -19,33 +19,28 @@
   align-items: center;
   margin-bottom: 2rem;
 }
-.proj-wrapper > a{
-  margin-top: 2rem;
-}
 .project-sec {
   display: flex;
-  justify-content: space-between;
-  padding: 2rem 6rem;
-  margin: 0 -6rem;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 8rem;
   transition: 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-.project-sec:hover{
-  background-color: var(--white-07);
-}
 .proj-h2{
-  font-size: 48px;
   letter-spacing: var(--letter-spacing);
   color: var(--black);
 }
 .projcontainer .faded-p{
   margin-bottom: auto;
+  width: 300px;
 }
 .projcontainer{
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   gap: 2rem;
 }
-.proj-redirect span, button[onclick="copyTxt()"]{
+.proj-redirect span{
   display: flex;
   align-items: center;
   padding: 10px 16px;
@@ -56,10 +51,10 @@
   color: #fff;
   text-transform: uppercase;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 16px;
   transition: 0.5s;
 }
-.proj-redirect:hover span, button[onclick="copyTxt()"]:hover{
+.proj-redirect:hover span{
   background-color: var(--blue-hover);
 }
 .proj-cta{
@@ -71,7 +66,6 @@
   color: var(--black);
 }
 .proj-img {
-  height: 56vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -282,31 +276,4 @@ span.beginner{
   color: var(--black);
   font-size: 16px;
   font-weight: 500;
-}
-
-#email_box{
-  box-sizing: border-box;
-  color: #fff;
-  background-color: var(--blue);
-  margin: 2rem 0rem;
-  padding: 2rem 2rem;
-  border-radius: 24px;
-  overflow: auto;
-  display: none;
-
-}
-#email_box.on{
-  display: block;
-}
-#email_box div{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-#email_box div p{
-  font-weight: 500;
-  font-size: 16px;
-}
-#email_box div svg{
-  height: 36px;
 }
