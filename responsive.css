@@ -13,7 +13,7 @@
     .abtcontainer{
         width: 100%;
     }
-    .section, .proj-wrapper, .contact-sec{
+    .section, .proj-wrapper, .contact-sec, .title-bar{
         padding: 2rem;
     }
     .faded-p{
@@ -43,8 +43,8 @@
         display: flex;
         flex-direction: column;
     }
-    .devinfo header a, .devinfo header span{
-        display: none;
+    .title-bar span{
+        display: none !important;
     }
 }
 @media screen and (max-width: 690px) {
@@ -65,13 +65,13 @@
 }
 @media screen and (max-width: 530px) {
     .name{
-        font-size: 32px;
+        font-size: 28px;
     }
     .devinfo{
         gap: 1.4rem;
     }
     .name + p{
-        font-size: 24px;
+        font-size: 20px;
         margin-bottom: 2rem;
         width: auto;
     }
@@ -111,7 +111,7 @@
 }
 @media screen and (max-width: 430px) {
     .section,.contact-sec, .proj-wrapper{
-        padding:2rem  1.2rem;
+        padding:  1.2rem;
     }
     .connect-container{
         padding: 0rem 1rem;
