@@ -77,13 +77,15 @@
 }
 .connect-container{
   background-color: #050505;
-  padding: 0rem 3rem;
+  padding: 0rem 6rem;
 }
 .connect-container .connect-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding-top: 3rem;
 }
 button.connect-cta {
-  width: 100%;
   font-family: var(--primary-font);
   background-color: #050505;
   color: #fff;
@@ -92,55 +94,53 @@ button.connect-cta {
   font-size: 24px;
   font-weight: 600;
   letter-spacing: var(--letter-spacing);
-  cursor: pointer;
   overflow: hidden;
+  cursor: pointer;
   position: relative;
   transition: 0.3s;
 
+}
+.connect-wrapper .txt-blck{
+  color: #858585;
 }
 strong{
   font-weight: inherit;
 }
 .connect-icons {
-  position: absolute;
   width: 100%;
-  left: 0;
+  position: absolute;
+  z-index: 5;
+  right: 0;
   display: flex;
-  justify-content: center;
-  transform: translateY(100%);
-  gap: 2%;
+  justify-content: flex-end;
+  gap: 4%;
 }
 .connect-icons a{
   color: #ffffff;
-  transition: .3s cubic-bezier(0.33, 1, 0.68, 1); 
+  transform: translateY(100%);
+    transition: .3s cubic-bezier(0.33, 1, 0.68, 1); 
 }
 .connect-txt{
-  color: #ffffff;
+  color: #050505;
   display: inline-block;
   transition: 1s cubic-bezier(0.16, 1, 0.3, 1);
   transition-delay: 1.5s;
 
 }
 .connect-icons a:nth-child(1){
-  transition-delay: 1.5s;
+  transition-delay: 0.5s;
 }
 .connect-icons a:nth-child(2){
-  transition-delay: calc(60ms + 1.5s);
+  transition-delay: calc(60ms + 0.5s);
 }
 .connect-icons a:nth-child(3){
-  transition-delay: calc(120ms + 1.5s);
-}
-.connect-icons a:nth-child(4){
-  transition-delay: calc(180ms + 1.5s);
-}
-.connect-icons a:nth-child(5){
-  transition-delay: calc(240ms + 1.5s);
-}
-.connect-txt.show,
-.connect-icon.show{
-  transform: translateY(-250%);
+  transition-delay: calc(120ms + 0.5s);
 }
 
+.connect-txt.show,
+.connect-icon.show{
+    transform: translateY(-100%);
+}
 .skills-sec .skill-wrapper{
   display: grid;
   grid-template-columns: 1fr 1fr;

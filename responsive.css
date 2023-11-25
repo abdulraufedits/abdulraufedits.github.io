@@ -19,6 +19,9 @@
     .faded-p{
         width: auto;
     }
+    .connect-container{
+        padding: 0rem 2rem;
+    }
 }
 @media screen and (max-width: 720px) {
     .name{
@@ -59,9 +62,6 @@
         font-size: 24px;
 
     }
-    .connect-icons{
-        justify-content: space-evenly;
-    }
 }
 @media screen and (max-width: 530px) {
     .name{
@@ -94,15 +94,6 @@
     button.exp-info{
         display: none;
     }
-    a.connect-icon{
-        scale: 80%;
-    }
-    .connect-container{
-        padding: 0rem 2rem;
-    }
-    button.connect-cta{
-        padding: 20px 0px;
-    }
     .projcontainer{
         flex-direction: column;
         align-items: flex-start;
@@ -114,7 +105,10 @@
         padding:  1.2rem;
     }
     .connect-container{
-        padding: 0rem 1rem;
+        padding: 0rem 1.2rem;
+    }
+    .connect-wrapper{
+        flex-direction: column-reverse;
     }
     .key-box span{
         width: 20px;
