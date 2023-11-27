@@ -83,7 +83,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 3rem;
+  padding: 1rem 0;
 }
 button.connect-cta {
   font-family: var(--primary-font);

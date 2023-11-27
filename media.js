@@ -1,7 +1,3 @@
-// let abtImg = document.getElementById('abt--img');
-
-// abtImg.setAttribute("src","https://ik.imagekit.io/abduledits5/new_avi.jpg");
-
 var resumeCtas = document.querySelectorAll('.resume-cta');
 
 resumeCtas.forEach(resumeCta => {

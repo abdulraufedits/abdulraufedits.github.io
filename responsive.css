@@ -104,11 +104,18 @@
     .section,.contact-sec, .proj-wrapper{
         padding:  1.2rem;
     }
+    .title-bar {
+        padding: 2rem 1.2rem;
+    }
     .connect-container{
         padding: 0rem 1.2rem;
     }
     .connect-wrapper{
         flex-direction: column-reverse;
+        padding: 1rem 0;
+    }
+    .connect-icons{
+        justify-content: center;
     }
     .key-box span{
         width: 20px;
@@ -191,7 +198,7 @@
         flex-direction: column;
     }
     .wrapper1{
-        padding: 0 2rem 0 1rem;
+        padding: 0 2rem 0 0;
     }
 }
 @media screen and (max-width: 380px) {
