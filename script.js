@@ -1,8 +1,8 @@
 let themeCta = document.querySelector(".theme-cta");
 
-themeCta.addEventListener("click", e => {
-  e.preventDefault();
+themeCta.addEventListener("click", () => {
   document.documentElement.classList.toggle("second");
+  themeCta.classList.toggle("dark");
 });
 
 window.addEventListener('scroll' , reveal);

@@ -5,9 +5,9 @@ html {
   --secondary-font: "Spline Sans Mono", "monospace";
   --white: #fafafa;
   --black: #050505;
-  --black-03: #282828;
-  --black-04: #383838;
-  --black-06: #585858;
+  --white-03: #181818;
+  --white-04: #383838;
+  --white-05: #585858;
   --white-06: #a5a5a5;
   --white-07: #efefef;
   --white-08: #f6f6f6;
@@ -24,13 +24,13 @@ html {
 }
 html.second{
   --white: #050505;
-  --black: #f7f7f7;
-  --black-03: #efefef;
-  --black-04: #222222;
-  --black-06: #aaaaaa;
-  --white-06: #282828;
-  --white-07: #181818;
-  --white-08: #121212;
+  --black: #fafafa;
+  --white-03: #f6f6f6;
+  --white-04: #efefef;
+  --white-05: #a5a5a5;
+  --white-06: #585858;
+  --white-07: #383838;
+  --white-08: #181818;
   --black-08: rgba(0, 0 , 0 , 0.2);
 }
 ::selection{
@@ -52,6 +52,7 @@ html.second{
 * {
   margin: 0px;
   padding: 0px;
+  transition: 0.2s;
 }
 body {
   font-family: var(--primary-font);
@@ -137,26 +138,26 @@ img{
   transition: 0.6s cubic-bezier(0.165, 0.840, 0.440, 1.000);
 }
 .primary-cta:hover , .primary-cta:active{
-  background-color: var(--white);
+  background-color: var(--white-08);
   color: var(--black);
 }
 
 .contact-cta{
   padding: 24px 32px;
   font-size: 1.1rem;
-  background-color: #ffffff;
+  background-color: #fafafa;
   color: #050505;
 }
 .contact-cta:hover, .contact-cta:active{
-  background-color: #050505;
-  color: #ffffff;
+  background-color: #181818;
+  color: #fafafa;
 }
 .secondary-cta{
   background: var(--white);
   color: var(--black);
 }
 .secondary-cta:hover, .secondary-cta:active{
-  background-color: var(--white-07);
+  background-color: var(--white-08);
 }
 .faded-p{
   color: var(--black);
@@ -185,12 +186,12 @@ h1.abt-h1, h1.proj-h1, h1.skill-h1, h1.exp-h1{
   width: 50%;
 }
 .contact-head strong{
-  color: #ffffff;
+  color: #fafafa;
   font-size: 3rem;
   font-weight: 600;
 }
 .contact-head p{
-  color: #ffffff;
+  color: #fafafa;
   margin-top: 1rem;
   opacity: 0.4;
 }

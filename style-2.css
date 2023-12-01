@@ -4,7 +4,6 @@
   flex-direction: column;
   overflow: hidden;
   background-color: var(--white);
-  transition: all 0.6s cubic-bezier(0.87, 0, 0.13, 1);
   gap: 50px;
 }
 
@@ -62,7 +61,7 @@
   font-size: 18px;
 }
 .proj-cta:hover, .proj-cta:active{
-  background-color: var(--white-07);
+  background-color: var(--white-08);
   color: var(--black);
 }
 .proj-img {
@@ -88,7 +87,7 @@
 button.connect-cta {
   font-family: var(--primary-font);
   background-color: #050505;
-  color: #fff;
+  color: #fafafa;
   border: 0;
   padding: 20px 40px;
   font-size: 24px;
@@ -116,7 +115,7 @@ strong{
   gap: 4%;
 }
 .connect-icons a{
-  color: #ffffff;
+  color: #fafafa;
   transform: translateY(100%);
     transition: .3s cubic-bezier(0.33, 1, 0.68, 1); 
 }
@@ -140,140 +139,4 @@ strong{
 .connect-txt.show,
 .connect-icon.show{
     transform: translateY(-100%);
-}
-.skills-sec .skill-wrapper{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-}
-.skill-sec-1, .skill-sec-2, .skill-sec-3, .skill-sec-4, .skill-sec-5{
-  width: 100%;
-}
-
-h2.skill-name{
-  color: var(--black);
-  font-size: 1.5rem;
-  font-weight: 500;
-}
-.skillcontainer ul{
-  list-style-type: none;
-  margin: 1rem 0px;
-  color: var(--black);
-}
-.skillcontainer ul li{
-  opacity: 0.7;
-  margin-bottom: 8px;
-}
-.exp-tag{
-  color: var(--black-06);
-  font-weight: 500;
-}
-button.exp-info{
-  color: var(--black);
-  position: relative;
-  background-color: var(--white);
-  padding: 32px;
-  border-radius: 60px;
-  border:2px solid  var(--black-03);
-  transition: all 0.4s ease-out;
-  cursor: pointer;
-}
-button.exp-info::before{
-  content: "View profile";
-  position: absolute;
-  top: 120%; left: -20px;
-  width: 16ch;
-  text-align: center;
-  font-weight: 500;
-  color: var(--black-04);
-}
-h2.exp-name{
-  color: var(--black);
-  font-size: 5vw;
-  letter-spacing: var(--letter-spacing);
-  font-weight: 400;
-  margin-bottom: 1.3rem;
-}
-.expcontainer{
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  border-bottom: 1px solid #aaa;
-  padding: 0rem 3rem 3rem 0rem;
-  gap: 2rem;
-  cursor: pointer;
-}
-.exp-info svg{
-  transform: rotateZ(45deg);
-  transition: all 0.4s cubic-bezier(0.37, 1, 0.43, 1);
-}
-.expcontainer:hover .exp-info svg, .expcontainer:active .exp-info svg{
-  transform: rotateZ(0deg);
-}
-.expcontainer:hover button.exp-info, .expcontainer:active button.exp-info{
-  background-color: var(--black);
-}
-.expcontainer:hover .exp-info svg path, .expcontainer:active .exp-info svg path{
-  fill: var(--white);
-}
-.exp-wrapper{
-  display: flex;
-  gap: 2rem;
-  flex-direction: column;
-}
-
-.apps-wrapper{
-  display: flex;
-  flex-direction: column;
-}
-.appcontainer{
-  display: flex;
-  align-items: center;
-  border-bottom: 1px solid rgba(136, 136, 136, 0.2);
-  padding: 1rem 0px;
-}
-h2.app-name{
-  color: var(--black);
-  font-size: 21px;
-  font-weight: 400;
-}
-.appcontainer span{
-  width: 26px;
-  height: 26px;
-  border-radius: 80px;
-  margin-left: auto;
-}
-span.expert{
-  background-color: var(--yellow);
-}
-span.inter{
-  background-color: var(--blue);
-}
-span.beginner{
-  background-color: var(--green);
-}
-
-.key-box{
-  display: flex;
-  justify-content: end;
-  gap: 16px;
-  margin-bottom: 2rem;
-}
-.key-box span{
-  display: inline-block;
-  width: 32px;
-  height: 32px;
-  border-radius: 80px;
-  margin-right: 1rem;
-}
-.key-1, .key-2{
-  background-color: var(--white-08);
-  padding: 10px 16px;
-  border-radius: 14px;
-  display: flex;
-  align-items: center;
-  color: var(--black);
-  font-size: 16px;
-  font-weight: 500;
 }

@@ -7,8 +7,6 @@
   right: 50px;
   top: 30px;
   cursor: pointer;
-  /* background-color: var(--black); */
-  /* padding: 20px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -91,26 +89,26 @@
   opacity: 0.7;
 }
 .theme-cta {
-  position: fixed;
-  left: 50px;
-  top: 32px;
-  height: 66px;
-  width: 66px;
-  border-radius: 100%;
-  z-index: 999;
-  border: 2px solid var(--black);
+  width: 42px;
+  border-radius: 100px;
+  background-color: var(--black);
+  padding: 6px;
   display: flex;
-  justify-content: center;
   align-items: center;
   cursor: pointer;
+  transition: all 0.3s ;
+  position: relative;
 }
 .theme-cta::before {
   content: "";
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  box-shadow: 12px 0px 0 0 var(--black);
-  transform: translateX(-12px);
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  background-color: var(--white-07);
+}
+.theme-cta.dark{
+  justify-content: flex-end;
+  background-color: var(--blue);
 }
 .smlinks {
   display: flex;

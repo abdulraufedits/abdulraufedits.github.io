@@ -1,18 +1,9 @@
 @media screen and (max-width: 1024px) {
-    strong.abt-strong{
-        font-size: calc(3vw - 1px);
-    }
     .name{
         font-size: calc(42px + 2vw);
     }
 }
 @media screen and (max-width: 900px) {
-    .abt-wrapper{
-        align-items: stretch;
-    }
-    .abtcontainer{
-        width: 100%;
-    }
     .section, .proj-wrapper, .contact-sec, .title-bar{
         padding: 2rem;
     }
@@ -27,40 +18,8 @@
     .name{
         font-size: 7.4vw;
     }
-    h2.exp-name{
-        font-size: calc(3vw + 16px);
-    }
-    .exp-tag{
-        font-size: 2vw;
-    }
-    .expcontainer{
-        padding: 2rem 0px;
-    }
-    button.exp-info::before{
-        top: 110%;
-    }
-    h2.app-name{
-        font-size: 16px;
-    }
-    .skills-sec .skill-wrapper{
-        display: flex;
-        flex-direction: column;
-    }
     .title-bar span{
         display: none !important;
-    }
-}
-@media screen and (max-width: 690px) {
-    strong.abt-strong{
-        font-size: 24px;
-    }
-    .exp-sec, .skills-sec{
-        gap: 32px;
-    }
-
-    .abtcontainer h4{
-        font-size: 24px;
-
     }
 }
 @media screen and (max-width: 530px) {
@@ -74,25 +33,6 @@
         font-size: 20px;
         margin-bottom: 2rem;
         width: auto;
-    }
-    button.exp-info{
-        padding: 12px;
-        border-radius: 100%;
-    }
-    .exp-info svg{
-        transform:scale(70%)
-    }
-    button.exp-info::before{
-        left: -60%;
-    }
-    .exp-tag{
-        font-size: calc(2vw + 3px);
-    }
-    .exp-tag .exp-name{
-        font-size: calc(5vw + 16px);
-    }
-    button.exp-info{
-        display: none;
     }
     .projcontainer{
         flex-direction: column;
@@ -117,14 +57,6 @@
     .connect-icons{
         justify-content: center;
     }
-    .key-box span{
-        width: 20px;
-        height: 20px;
-    }
-    .key-box{
-        flex-direction: column;
-        gap: 8px;
-    }
 }
 
 @media screen and (max-width: 340px) {
@@ -133,9 +65,6 @@
     }
     .cta{
         width: 100%;
-    }
-    .appcontainer{
-        gap: 0.8rem;
     }
 }
 
@@ -186,11 +115,6 @@
     }
     .contact-head strong{
         font-size: 2rem;
-    }
-    .abt-p-container{
-        display: flex;
-        flex-direction: column;
-        row-gap: 2rem;
     }
 }
 @media screen and (max-width: 530px) {
