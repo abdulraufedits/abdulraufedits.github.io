@@ -41,8 +41,10 @@
   justify-content: space-between;
   padding: 0px 3rem;
   letter-spacing: -0.02rem;
+  pointer-events: none;
 }
 .nav-wrapper.menu_active {
+  pointer-events: all;
   transform: translateY(0px);
 }
 .nav-wrapper > span {
@@ -90,25 +92,28 @@
 }
 .theme-cta {
   width: 42px;
+  height: 16px;
   border-radius: 100px;
   background-color: var(--black);
   padding: 6px;
-  display: flex;
-  align-items: center;
   cursor: pointer;
   transition: all 0.3s ;
   position: relative;
 }
 .theme-cta::before {
   content: "";
+  position: absolute;
   width: 16px;
   height: 16px;
   border-radius: 50px;
-  background-color: var(--white-07);
+  background-color: #fafafa;
+  transition: all 0.3s;
 }
 .theme-cta.dark{
-  justify-content: flex-end;
   background-color: var(--blue);
+}
+.theme-cta.dark::before{
+  transform: translateX(26px);
 }
 .smlinks {
   display: flex;

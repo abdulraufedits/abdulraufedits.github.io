@@ -18,8 +18,11 @@
     .name{
         font-size: 7.4vw;
     }
-    .title-bar span{
+    .title-bar span a, .title-bar > div{
         display: none !important;
+    }
+    .title-bar{
+        justify-content: stretch;
     }
 }
 @media screen and (max-width: 530px) {

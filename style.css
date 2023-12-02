@@ -197,7 +197,7 @@ h1.abt-h1, h1.proj-h1, h1.skill-h1, h1.exp-h1{
 }
 /*Contact.html*/
 input{
-  background-color: var(--white-07);
+  background-color: var(--white-08);
   width: 40ch;
   border: none;
   color: var(--black);
@@ -215,7 +215,7 @@ input::placeholder{
   text-transform: uppercase;
 }
 input:focus{
-  background-color: var(--white-06);
+  background-color: var(--white-07);
 }
 .submit-cta{
   display: flex;
