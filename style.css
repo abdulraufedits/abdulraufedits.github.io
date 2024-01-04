@@ -8,7 +8,7 @@ html {
   --white-03: #181818;
   --white-04: #383838;
   --white-05: #585858;
-  --white-06: #a5a5a5;
+  --white-06: #aeaeae;
   --white-07: #efefef;
   --white-08: #f6f6f6;
   --blue: #3180e7;
@@ -109,6 +109,7 @@ img{
   font-size: 2rem;
   font-weight: 600;
   width: 20ch;
+  margin-bottom: 3rem;
 }
 .word{
   clip-path: polygon(0 0, 120% 0, 120% 120%, 0% 120%);
@@ -197,7 +198,7 @@ h1.abt-h1, h1.proj-h1, h1.skill-h1, h1.exp-h1{
 }
 /*Contact.html*/
 input{
-  background-color: var(--white-08);
+  background-color: var(--white-07);
   width: 40ch;
   border: none;
   color: var(--black);
@@ -215,7 +216,7 @@ input::placeholder{
   text-transform: uppercase;
 }
 input:focus{
-  background-color: var(--white-07);
+  background-color: var(--white-06);
 }
 .submit-cta{
   display: flex;
