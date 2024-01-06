@@ -30,7 +30,7 @@ html.second{
   --white-05: #a5a5a5;
   --white-06: #585858;
   --white-07: #383838;
-  --white-08: #181818;
+  --white-08: #181818; 
   --black-08: rgba(0, 0 , 0 , 0.2);
 }
 ::selection{
@@ -45,7 +45,7 @@ html.second{
   background-color: var(--white);
 }
 ::-webkit-scrollbar-thumb{
-  background-color: rgb(68, 68, 68);
+  background-color: var(--white-03);
   width: 8px;
 
 }
