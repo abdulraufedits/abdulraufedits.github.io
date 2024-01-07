@@ -73,6 +73,7 @@
   transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
   user-select: none;
   -webkit-user-select: none;
+  transition: background-size 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .proj-img:hover{
