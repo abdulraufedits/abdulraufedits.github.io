@@ -24,6 +24,14 @@
     .title-bar{
         justify-content: stretch;
     }
+    .projcontainer{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    .proj-img{
+        border-radius: 12px;
+    }
 }
 @media screen and (max-width: 530px) {
     .name{
@@ -36,11 +44,6 @@
         font-size: 20px;
         margin-bottom: 2rem;
         width: auto;
-    }
-    .projcontainer{
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 1rem;
     }
 }
 @media screen and (max-width: 430px) {
