@@ -18,11 +18,21 @@
     .name{
         font-size: 7.4vw;
     }
-    .title-bar span a, .title-bar > div{
+    .title-bar > span a, .title-bar > div:not(:first-child){
         display: none !important;
     }
     .title-bar{
         justify-content: stretch;
+    }
+    .head-email-box{
+        width: auto;
+        clip-path: none;
+    }
+    .head-email-box:hover > a{
+        transform: none;
+    }
+    #head-email{
+        display: none;
     }
     .projcontainer{
         flex-direction: column;
