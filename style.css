@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 
 html {
-  --primary-font: "Plus Jakarta Sans","Nohemi", "sans serif";
+  --primary-font: "Plus Jakarta Sans", "Nohemi", "sans serif";
   --secondary-font: "Spline Sans Mono", "monospace";
   --white: #fafafa;
   --black: #050505;
@@ -16,13 +16,12 @@ html {
   --blue-second: #d7e1f0;
   --yellow: #ebab23;
   --green: #52df11;
-  --primary-gradient: linear-gradient(60deg, #302DCB, #651CE3 );
-  transition: all 0.5s ease;
+  --primary-gradient: linear-gradient(60deg, #302dcb, #651ce3);
   scroll-behavior: smooth;
   --letter-spacing: -0.025em;
   letter-spacing: -0.025em;
 }
-html.second{
+html.second {
   --white: #050505;
   --black: #fafafa;
   --white-03: #f6f6f6;
@@ -30,29 +29,28 @@ html.second{
   --white-05: #a5a5a5;
   --white-06: #585858;
   --white-07: #383838;
-  --white-08: #181818; 
-  --black-08: rgba(0, 0 , 0 , 0.2);
+  --white-08: #181818;
+  --black-08: rgba(0, 0, 0, 0.2);
 }
-::selection{
+::selection {
   color: #000;
   background-color: pink;
 }
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   background-color: transparent;
   width: 8px;
 }
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
   background-color: var(--white);
 }
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background-color: var(--white-03);
   width: 8px;
-
 }
 * {
   margin: 0px;
   padding: 0px;
-  transition: 0.2s;
+  transition: 0.3s;
 }
 body {
   font-family: var(--primary-font);
@@ -62,55 +60,56 @@ a {
   text-decoration: none;
   color: inherit;
 }
-button{
+button {
   font-family: var(--primary-font);
   outline: none;
 }
-img{
+img {
   pointer-events: none;
 }
 .container {
   background-color: var(--white);
   color: var(--black);
 }
-.devinfo{
+.devinfo {
   display: flex;
   flex-direction: column;
   row-gap: 3rem;
   background-color: var(--white);
 }
-.title-bar{
+.title-bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 2rem 6rem;
-  gap: 2rem;
+  gap: 1rem;
   font-size: 21px;
   font-weight: 500;
   letter-spacing: var(--letter-spacing);
   background-color: var(--white);
   color: var(--black);
 }
-.title-bar span a:hover{
+.title-bar span a:hover {
   color: var(--blue);
 }
 .name {
   color: var(--black);
   font-size: calc(84px + 2vw);
   font-weight: 800;
-  line-height: 100% ;
+  line-height: 100%;
   letter-spacing: var(--letter-spacing);
   text-transform: uppercase;
   user-select: none;
   position: relative;
 }
 .name + p {
-  font-size: 2rem;
-  font-weight: 600;
-  width: 20ch;
-  margin-bottom: 3rem;
+  color: var(--black);
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.5;
+  width: 32ch;
 }
-.word{
+.word {
   clip-path: polygon(0 0, 120% 0, 120% 120%, 0% 120%);
   transform: translateY(120%);
 }
@@ -132,41 +131,48 @@ img{
   display: flex;
   gap: 0.5rem;
   align-items: center;
+  justify-content: center;
   font-weight: 500;
   padding: 18px 32px;
   font-size: 18px;
-  transition: 0.6s cubic-bezier(0.165, 0.840, 0.440, 1.000);
+  transition-timing-function:  cubic-bezier(0.165, 0.84, 0.44, 1);
 }
-.primary-cta:hover , .primary-cta:active{
+.primary-cta:hover,
+.primary-cta:active {
   background-color: var(--white-08);
   color: var(--black);
 }
 
-.contact-cta{
+.contact-cta {
   padding: 24px 32px;
   font-size: 1.1rem;
   background-color: #fafafa;
   color: #050505;
 }
-.contact-cta:hover, .contact-cta:active{
+.contact-cta:hover,
+.contact-cta:active {
   background-color: #181818;
   color: #fafafa;
 }
-.secondary-cta{
+.secondary-cta {
   background: var(--white);
   color: var(--black);
 }
-.secondary-cta:hover, .secondary-cta:active{
+.secondary-cta:hover,
+.secondary-cta:active {
   background-color: var(--white-08);
 }
-.faded-p{
+.faded-p {
   color: var(--black);
   font-size: 18px;
   line-height: 180%;
   font-family: var(--primary-font);
   opacity: 0.7;
 }
-h1.abt-h1, h1.proj-h1, h1.skill-h1, h1.exp-h1{
+h1.abt-h1,
+h1.proj-h1,
+h1.skill-h1,
+h1.exp-h1 {
   color: var(--black);
   font-size: 32px;
   line-height: 1.2;
@@ -174,44 +180,44 @@ h1.abt-h1, h1.proj-h1, h1.skill-h1, h1.exp-h1{
   letter-spacing: var(--letter-spacing);
   user-select: none;
 }
-.contact-sec{
+.contact-sec {
   background-color: #050505;
   padding: 2rem 6rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.contact-head{
+.contact-head {
   width: 50%;
 }
-.contact-head strong{
+.contact-head strong {
   color: #fafafa;
   font-size: 3rem;
   font-weight: 600;
 }
-.contact-head p{
+.contact-head p {
   color: #fafafa;
   margin-top: 1rem;
   opacity: 0.4;
 }
-.head-email-box{
+.head-email-box {
   clip-path: polygon(0 0, 120% 0, 120% 120%, 0% 120%);
   width: 20ch;
 }
-.head-email-box > a{
+.head-email-box > a {
   position: relative;
   display: grid;
 }
-#head-email{
+#head-email {
   position: absolute;
   top: 100%;
   text-decoration: underline;
 }
-.head-email-box:hover >a{
+.head-email-box:hover > a {
   transform: translateY(-100%);
 }
 /*Contact.html*/
-input{
+input {
   background-color: var(--white-07);
   width: 40ch;
   border: none;
@@ -224,28 +230,28 @@ input{
   margin: 4px 12px;
   transition: all 0.4s ease;
 }
-input::placeholder{
+input::placeholder {
   font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
 }
-input:focus{
+input:focus {
   background-color: var(--white-06);
 }
-.submit-cta{
+.submit-cta {
   display: flex;
   align-items: center;
   margin-top: 2rem;
 }
-.submit-cta span{
+.submit-cta span {
   display: inline-block;
   height: 4px;
   width: 2em;
   color: var(--black);
   background-color: var(--black);
-  transition: 0.5s ease;
 }
-.submit-cta:hover span, .submit-cta:active span {
+.submit-cta:hover span,
+.submit-cta:active span {
   width: 0.4em;
 }
 input[type="submit"] {
@@ -267,12 +273,12 @@ input[type="submit"] {
   justify-content: center;
   align-items: center;
 }
-.devinfo1{
+.devinfo1 {
   width: 100%;
   display: flex;
   gap: 3rem;
 }
-.wrapper2{
+.wrapper2 {
   width: auto;
 }
 h1.contact {
@@ -285,10 +291,9 @@ h1.contact {
   user-select: none;
 }
 
-p.contact-p{
+p.contact-p {
   color: var(--black);
   font-weight: 600;
   font-size: 32px;
   line-height: 160%;
 }
-

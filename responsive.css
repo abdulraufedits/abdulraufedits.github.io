@@ -7,7 +7,7 @@
     .section, .proj-wrapper, .contact-sec, .title-bar{
         padding: 2rem;
     }
-    .faded-p{
+    .faded-p, .name + p{
         width: auto;
     }
     .connect-container{
@@ -28,7 +28,7 @@
         width: auto;
         clip-path: none;
     }
-    .head-email-box:hover > a{
+    .head-email-box:hover a{
         transform: none;
     }
     #head-email{
@@ -51,9 +51,11 @@
         gap: 1.4rem;
     }
     .name + p{
-        font-size: 20px;
-        margin-bottom: 2rem;
-        width: auto;
+        font-size: 18px;
+        padding-bottom: 2rem;
+    }
+    .menu-wrapper{
+        right: 20px;
     }
 }
 @media screen and (max-width: 430px) {
@@ -73,9 +75,6 @@
     .connect-icons{
         justify-content: center;
     }
-}
-
-@media screen and (max-width: 340px) {
     .ctas{
         flex-direction: column;
     }
@@ -83,6 +82,7 @@
         width: 100%;
     }
 }
+
 
 /* contact sec  */
 @media screen and (max-width:1024px) {
