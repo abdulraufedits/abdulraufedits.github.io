@@ -1,7 +1,7 @@
 var resumeCtas = document.querySelectorAll('.resume-cta');
 
 resumeCtas.forEach(resumeCta => {
-    resumeCta.setAttribute('href', 'https://drive.google.com/file/d/1cnYt2ffqTcu_moa8PS-YTSzIuChMC3vR/view?usp=sharing');
+    resumeCta.setAttribute('href', 'https://drive.google.com/file/d/1P8opQQe7mnQuVHNhbmL6Peb-rqwR2n_s/view?usp=sharing');
 });
 
 let projImgs = document.querySelectorAll('.proj-img');
