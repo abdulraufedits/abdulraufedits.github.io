@@ -24,6 +24,8 @@
   gap: 1rem;
   margin-bottom: 8rem;
   transition: 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
+  opacity: 0;
+  transform: translateY(100%);
 }
 .proj-h2{
   letter-spacing: var(--letter-spacing);

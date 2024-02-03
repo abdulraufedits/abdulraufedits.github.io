@@ -54,6 +54,7 @@ html.second {
 }
 body {
   font-family: var(--primary-font);
+  background-color: var(--white);
 }
 
 a {
@@ -109,6 +110,7 @@ img {
   line-height: 1.5;
   width: 32ch;
 }
+
 .word {
   clip-path: polygon(0 0, 120% 0, 120% 120%, 0% 120%);
   transform: translateY(120%);
@@ -121,6 +123,8 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+  opacity: 0;
+  transform: translateY(50%);
 }
 .cta {
   cursor: pointer;
@@ -179,6 +183,8 @@ h1.exp-h1 {
   font-weight: 500;
   letter-spacing: var(--letter-spacing);
   user-select: none;
+  opacity: 0;
+  transform: translateY(100%);
 }
 .contact-sec {
   background-color: #050505;
