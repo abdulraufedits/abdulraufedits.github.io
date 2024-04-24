@@ -3,6 +3,10 @@ let themeCta = document.querySelector(".theme-cta");
 themeCta.addEventListener("click", () => {
   document.documentElement.classList.toggle("second");
   themeCta.classList.toggle("dark");
+  setTimeout(() => {
+    changeDepart();
+  }, 50);
+  document.getElementById("surprise-txt-temp").style.display = "none";
 });
 
 window.addEventListener('scroll' , reveal);
@@ -69,3 +73,36 @@ menuInactive();
 //   navigator.clipboard.writeText(email.textContent);
 //   emailBtn.innerHTML += "copied!"
 // }
+
+let nameDesign = document.querySelector("h1.name > span");
+let namePlusP = document.querySelector("h1.name + p");
+function changeDepart(){
+  if(themeCta.classList.contains("dark")){
+    nameDesign.innerHTML = "Frontend Developer";
+    namePlusP.innerHTML = " I'm also doing Frontend web development and I have strong foundation in HTML, CSS and JavaScript and their respective frameworks and libraries.";
+    nameDesign.setAttribute("style", "color: var(--yellow);");
+  } else{
+    nameDesign.innerHTML = "UI UX Designer";
+    namePlusP.innerHTML = "I am a passionate and a dedicated UI/UX Designer with a strong background in creating visually appealing digital experiences.";
+    nameDesign.setAttribute("style", "color: var(--blue);");
+  }
+}
+
+
+
+window.addEventListener('scroll' , revealProjects);
+
+var projects = document.querySelectorAll('.project-sec');
+
+function revealProjects() {
+  
+  for (var i = 0; i < projects.length; i++){
+    var windowHeight = window.innerHeight;
+    var revealTop = projects[i].getBoundingClientRect().top;
+    var revealPoint = 200; 
+
+    if(revealTop < windowHeight - revealPoint){
+        projects[i].classList.add('reveal');
+      }
+    }
+}

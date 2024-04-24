@@ -1,9 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 
 html {
-  --primary-font: "Plus Jakarta Sans", "Nohemi", "sans serif";
+  --primary-font: "Inter", "Nohemi", "sans serif";
   --secondary-font: "Spline Sans Mono", "monospace";
-  --white: #fafafa;
+  --handwriting-font: "Caveat";
+  --white: #fdfdfd;
   --black: #050505;
   --white-03: #181818;
   --white-04: #383838;
@@ -18,8 +20,9 @@ html {
   --green: #52df11;
   --primary-gradient: linear-gradient(60deg, #302dcb, #651ce3);
   scroll-behavior: smooth;
-  --letter-spacing: -0.025em;
-  letter-spacing: -0.025em;
+  --letter-spacing: -0.020em;
+  letter-spacing: -0.020em;
+  transition: all 0.3s;
 }
 html.second {
   --white: #050505;
@@ -50,7 +53,7 @@ html.second {
 * {
   margin: 0px;
   padding: 0px;
-  transition: 0.3s;
+  transition: 0.1s;
 }
 body {
   font-family: var(--primary-font);
@@ -60,6 +63,7 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+  transition: 0.3s ;
 }
 button {
   font-family: var(--primary-font);
@@ -68,6 +72,23 @@ button {
 img {
   pointer-events: none;
 }
+
+#surprise-txt-temp{
+  font-family: var(--handwriting-font);
+  font-weight: 400;
+  font-size: 20px;
+  width: 12ch;
+  position: absolute;
+  right: 12rem;
+  top: 6rem;
+  transform: rotate(-24deg);
+}
+#surprise-txt-temp > i{
+  position: relative;
+  transform: rotate(32deg);
+  right: -56px;
+  top: -24px;
+}
 .container {
   background-color: var(--white);
   color: var(--black);
@@ -75,14 +96,14 @@ img {
 .devinfo {
   display: flex;
   flex-direction: column;
-  row-gap: 3rem;
+  row-gap: 2rem;
   background-color: var(--white);
 }
 .title-bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem 6rem;
+  padding: 2rem 10rem;
   gap: 1rem;
   font-size: 21px;
   font-weight: 500;
@@ -96,35 +117,33 @@ img {
 .name {
   color: var(--black);
   font-size: calc(84px + 2vw);
-  font-weight: 800;
-  line-height: 100%;
+  font-weight: 700;
+  line-height: 110%;
   letter-spacing: var(--letter-spacing);
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   user-select: none;
   position: relative;
 }
-.name + p {
-  color: var(--black);
-  font-size: 32px;
-  font-weight: 500;
+.name + p, .faded-p {
+  color: var(--white-05);
+  font-size: 20px;
+  font-weight: 400;
   line-height: 1.5;
-  width: 32ch;
+  width: 40ch;
 }
-
-.word {
+/* .text_anim{
   clip-path: polygon(0 0, 120% 0, 120% 120%, 0% 120%);
+} */
+.line {
+  position: relative;
+  clip-path: polygon(0 0, 120% 0, 120% 120%, 0% 120%);
+}
+.line > * {
   transform: translateY(120%);
 }
 
-.line {
-  clip-path: polygon(0 0, 120% 0, 120% 120%, 0% 120%);
-}
-.ctas {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  opacity: 0;
-  transform: translateY(50%);
+i.ph-bold, i.ph, i.ph-fill{
+  font-size: 24px;
 }
 .cta {
   cursor: pointer;
@@ -166,13 +185,7 @@ img {
 .secondary-cta:active {
   background-color: var(--white-08);
 }
-.faded-p {
-  color: var(--black);
-  font-size: 18px;
-  line-height: 180%;
-  font-family: var(--primary-font);
-  opacity: 0.7;
-}
+
 h1.abt-h1,
 h1.proj-h1,
 h1.skill-h1,
@@ -183,12 +196,10 @@ h1.exp-h1 {
   font-weight: 500;
   letter-spacing: var(--letter-spacing);
   user-select: none;
-  opacity: 0;
-  transform: translateY(100%);
 }
 .contact-sec {
   background-color: #050505;
-  padding: 2rem 6rem;
+  padding: 2rem 10rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -202,13 +213,12 @@ h1.exp-h1 {
   font-weight: 600;
 }
 .contact-head p {
-  color: #fafafa;
+  color: #858585;
   margin-top: 1rem;
-  opacity: 0.4;
 }
 .head-email-box {
-  clip-path: polygon(0 0, 120% 0, 120% 120%, 0% 120%);
-  width: 20ch;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  width: 24ch;
 }
 .head-email-box > a {
   position: relative;

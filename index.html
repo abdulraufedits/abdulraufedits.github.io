@@ -8,6 +8,7 @@
     <meta name="description"
         content="Hey there, it's Abdul Rauf; a UI/UX designer and a frontend developer. Let's have a look at my Portfolio!">
     <title>Abdul Rauf - UI/UX Designer</title>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style-2.css">
     <link rel="stylesheet" href="menu.css">
@@ -17,7 +18,7 @@
 
 <body>
     <div class="menu-wrapper">
-        <div class="theme-cta"></div>
+
         <div class="menu-icon">
             <span class="menu-icon__line menu-icon__line-up"></span>
             <span class="menu-icon__line menu-icon__line-down"></span>
@@ -50,7 +51,7 @@
     </div>
     <header class="title-bar">
         <div class="head-email-box">
-            <a href="https://mail.google.com/mail/u/2/#inbox?compose=cSRfBJFXNHZRhnMZXxqZZXzcHbbvfHTblGwbsCcjDwBWMxZWtzgRXdszcTXLHhLVzdsBNpXzvJBmHVHbvllNjknvkBnvkVVFzmxRHMcGWjLcWVsJjkgtDpSSvCCZFBqlmpLkCRWWhDxcbXFtDgtsVQLwfhPVPBtg">
+            <a href="editsabdulrauf5681@gmail.com">
                 <strong>Abdul Rauf</strong>
                 <strong id="head-email">editsabdulrauf5681@gmail.com</strong>
             </a>
@@ -58,27 +59,28 @@
         <span style="display: flex; gap: 2rem;">
             <a href="/about">About</a>
             <a href="/my-projects">My Work</a>
+            <a href="#contact--sec">Contact</a>
+            <a class="resume-cta">Resume <i style="position: relative; bottom: -3px;" class="ph-bold ph-arrow-up-right"></i></a>
         </span>
-        <div></div>
-        <div></div>
+        <div class="theme-cta"></div>
     </header>
+    <code id="surprise-txt-temp">Tap here for a surprise<i class="ph ph-arrow-bend-right-up"></i></code>
     <!-- hero sec -->
     <div class="container section home">
         <div class="infocontainer">
-
             <div class="devinfo">
-                <h1 class="name text_anim">UI/UX Designer<br>Frontend Developer</h1>
-                <p class="p-text-anim">With a strong background in creating digital experiences.</p>
-                <div class="ctas">
-                    <a href="contact.html"><button class="primary-cta cta">Contact Me</button></a>
-                    <a class="resume-cta" target="_blank"><button class="secondary-cta cta">Resume
-                            <svg width="13" height="12" viewBox="0 0 12 11" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M9.60854 8.18416L10.1176 3.6023L1.43727 10.5466L0.562693 9.45338L9.24306 2.50909L4.66121 1.99999L4.81581 0.608555L11.0773 1.28L11.77 1.36719L11.6957 2.07729L11 8.33876L9.60854 8.18416Z"
-                                    fill="currentColor" />
-                            </svg></button></a>
-                </div>
+                <h1 class="name text_anim"><b>Abdul Rauf</b><br><span style="color: var(--blue);">UI UX Designer</span></h1>
+                <p class="p-text-anim"><span>I am a passionate and a dedicated UI/UX Designer with a strong background in creating visually appealing digital experiences.</span></p>
+                <span class="smlinks">
+                    <!-- <i><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.8 2H16.2C19.4 2 22 4.6 22 7.8V16.2C22 17.7383 21.3889 19.2135 20.3012 20.3012C19.2135 21.3889 17.7383 22 16.2 22H7.8C4.6 22 2 19.4 2 16.2V7.8C2 6.26174 2.61107 4.78649 3.69878 3.69878C4.78649 2.61107 6.26174 2 7.8 2ZM7.6 4C6.64522 4 5.72955 4.37928 5.05442 5.05442C4.37928 5.72955 4 6.64522 4 7.6V16.4C4 18.39 5.61 20 7.6 20H16.4C17.3548 20 18.2705 19.6207 18.9456 18.9456C19.6207 18.2705 20 17.3548 20 16.4V7.6C20 5.61 18.39 4 16.4 4H7.6ZM17.25 5.5C17.5815 5.5 17.8995 5.6317 18.1339 5.86612C18.3683 6.10054 18.5 6.41848 18.5 6.75C18.5 7.08152 18.3683 7.39946 18.1339 7.63388C17.8995 7.8683 17.5815 8 17.25 8C16.9185 8 16.6005 7.8683 16.3661 7.63388C16.1317 7.39946 16 7.08152 16 6.75C16 6.41848 16.1317 6.10054 16.3661 5.86612C16.6005 5.6317 16.9185 5.5 17.25 5.5ZM12 7C13.3261 7 14.5979 7.52678 15.5355 8.46447C16.4732 9.40215 17 10.6739 17 12C17 13.3261 16.4732 14.5979 15.5355 15.5355C14.5979 16.4732 13.3261 17 12 17C10.6739 17 9.40215 16.4732 8.46447 15.5355C7.52678 14.5979 7 13.3261 7 12C7 10.6739 7.52678 9.40215 8.46447 8.46447C9.40215 7.52678 10.6739 7 12 7ZM12 9C11.2044 9 10.4413 9.31607 9.87868 9.87868C9.31607 10.4413 9 11.2044 9 12C9 12.7956 9.31607 13.5587 9.87868 14.1213C10.4413 14.6839 11.2044 15 12 15C12.7956 15 13.5587 14.6839 14.1213 14.1213C14.6839 13.5587 15 12.7956 15 12C15 11.2044 14.6839 10.4413 14.1213 9.87868C13.5587 9.31607 12.7956 9 12 9Z" fill="black"/>
+                        </svg>
+                        </i> -->
+                        <a href="https://www.instagram.com/abdulraufedits"><i class="ph-bold ph-instagram-logo"></i></a>
+                        <a href="https://behance.net/abdulraufedits"><i class="ph-bold ph-behance-logo"></i></a>
+                        <a href="https://dribbble.com/abdulraufedits"><i class="ph-bold ph-dribbble-logo"></i></a>
+                        <a href="https://www.linkedin.com/in/abdulraufedits"><i class="ph-bold ph-linkedin-logo"></i></a>
+                </span>
             </div>
         </div>
 
@@ -93,7 +95,14 @@
             <section class="project-sec project-sec-9">
             <div class="proj-img" id="project--9"></div>
             <div class="projcontainer">
-                <h2 class="proj-h2">Math Trove</h2>
+                <div>
+                    <div class="tags">
+                        <label class="tag">Case Study</label>
+                        <label class="tag">Product Design</label>
+                        <label class="tag">Web Development</label>
+                    </div>
+                    <h2 class="proj-h2">Math Trove</h2>
+                </div>
                 <p class="faded-p">Math Trove is a huge math library which contains from basic to advanced mathematical formulas.</p>
             </div>
         </section>
@@ -102,7 +111,13 @@
             <section class="project-sec project-sec-7">
                 <div class="proj-img" id="project--7"></div>
                 <div class="projcontainer">
-                    <h2 class="proj-h2">Android 15 (concept)</h2>
+                    <div>
+                        <div class="tags">
+                            <label class="tag">Concept Design</label>
+                            <label class="tag">UI Design</label>
+                        </div>
+                        <h2 class="proj-h2">Android 15 (concept)</h2>
+                    </div>
                     <p class="faded-p">Explore what's about to change in the future of Android world.</p>
                 </div>
             </section>
@@ -111,7 +126,14 @@
             <section class="project-sec project-sec-6">
                 <div class="proj-img" id="project--6"></div>
                 <div class="projcontainer">
-                    <h2 class="proj-h2">Framer Mobile (concept)</h2>
+                    <div>
+                        <div class="tags">
+                            <label class="tag">Concept Design</label>
+                            <label class="tag">UI Design</label>
+                            <label class="tag">App Design</label>
+                        </div>
+                        <h2 class="proj-h2">Framer Mobile (concept)</h2>
+                    </div>
                     <p class="faded-p">Designing a Framer mobile app that lets you access your designs on the go.</p>
                 </div>
             </section>
@@ -120,7 +142,13 @@
             <section class="project-sec project-sec-5">
             <div class="proj-img" id="project--5"></div>
             <div class="projcontainer">
-                <h2 class="proj-h2">Penpot app redesign</h2>
+                <div>
+                    <div class="tags">
+                        <label class="tag">Redesign</label>
+                        <label class="tag">UI Design</label>
+                    </div>
+                    <h2 class="proj-h2">Penpot app redesign</h2>
+                </div>
                 <p class="faded-p">Redesigning the user interface of Penpot, a great alternative of Figma.</p>
             </div>
         </section>
@@ -129,7 +157,13 @@
             <section class="project-sec project-sec-4">
                 <div class="proj-img" id="project--4"></div>
                 <div class="projcontainer">
-                    <h2 class="proj-h2">Alight Motion Desktop (concept)</h2>
+                    <div>
+                        <div class="tags">
+                            <label class="tag">Concept Design</label>
+                            <label class="tag">UI Design</label>
+                        </div>
+                        <h2 class="proj-h2">Alight Motion Desktop (concept)</h2>
+                    </div>
                     <p class="faded-p">Desiging a concept version of Alight Motion Desktop.</p>
                 </div>
             </section>
@@ -138,14 +172,18 @@
             <section class="project-sec project-sec-2">
                 <div class="proj-img" id="project--2"></div>
                 <div class="projcontainer">
-                    <h2 class="proj-h2">windows 12 (concept)</h2>
+                    <div>
+                        <div class="tags">
+                            <label class="tag">Concept Design</label>
+                            <label class="tag">UI Design</label>
+                        </div>
+                        <h2 class="proj-h2">Windows 12 (concept)</h2>
+                    </div>
                     <p class="faded-p">Windows 12 is just about to release! Here's the concept version of how Windows 12 would look like.</p>
                 </div>
             </section>
         </a>
-        <a style="display: flex;" href="/my-projects" class="proj-redirect"><span>see all <svg width="36" height="36" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M15.085 15.085V17.7437L25.6161 17.7531L14.1421 29.2271L16.0278 31.1127L27.5017 19.6387L27.5112 30.1699H30.1699V15.085H15.085Z" fill="currentColor"></path>
-        </svg></span></a>
+        <a href="/my-projects" class="proj-redirect"><span>See more projects <i class="ph-bold ph-arrow-up-right"></i></span></a>
         
     </main>
     <!-- contact cta -->
@@ -154,12 +192,7 @@
             <strong>Need a designer for your project?</strong>
             <p>I'm always happy to hear about the exciting opportunities. Let's get in touch.</p>
         </div>
-        <a href="contact.html"><button class="cta contact-cta"><svg width="22" height="22" viewBox="0 0 32 32"
-                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M31.7071 0.292891C31.9788 0.564529 32.0708 0.967761 31.9439 1.33035L21.4439 31.3303C21.3084 31.7173 20.9504 31.9825 20.5408 31.9992C20.1311 32.0159 19.7527 31.7808 19.5862 31.4061L13.7424 18.2576L0.593867 12.4138C0.219186 12.2473 -0.0158775 11.8689 0.000836285 11.4592C0.0175501 11.0496 0.282654 10.6916 0.669655 10.5561L30.6697 0.056139C31.0322 -0.0707664 31.4355 0.0212527 31.7071 0.292891ZM15.6928 17.7215L20.3894 28.2889L28.6085 4.80568L15.6928 17.7215ZM27.1943 3.39147L3.71108 11.6106L14.2785 16.3073L27.1943 3.39147Z"
-                        fill="currentColor" />
-                </svg>Contact Me</button></a>
+        <a href="contact.html"><button class="cta contact-cta"><i class="ph ph-paper-plane-tilt"></i>Contact Me</button></a>
     </div>
     <!-- connect sec -->
     <footer class="connect-container">
@@ -169,28 +202,12 @@
                 <strong class="connect-txt">Lorem ipsum dolor</strong>
                 <div class="connect-icons">
                     <a id="twitter" class="connect-icon" href="https://www.twitter.com/abdulraufedits"
-                        target="_blank"><svg width="34" height="30" viewBox="0 0 19 15" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M6.35348 14.5962C4.32049 14.5962 2.4254 14.0049 0.830322 12.9847C2.1846 13.0723 4.57459 12.8624 6.06116 11.4445C3.82487 11.3419 2.81635 9.62672 2.6848 8.89376C2.87481 8.96706 3.78102 9.05501 4.29259 8.84978C1.72012 8.20477 1.32548 5.94725 1.41318 5.25826C1.89552 5.59543 2.71403 5.7127 3.03559 5.68338C0.638519 3.96825 1.50088 1.38822 1.92475 0.831167C3.64498 3.21439 6.22306 4.5529 9.41248 4.62736C9.35235 4.36361 9.32059 4.08902 9.32059 3.807C9.32059 1.78298 10.9566 0.142181 12.9747 0.142181C14.0291 0.142181 14.9792 0.590102 15.6461 1.30657C16.3507 1.14146 17.4112 0.754949 17.9296 0.420707C17.6683 1.3589 16.8548 2.14154 16.3627 2.43162C16.3668 2.44149 16.3587 2.42171 16.3627 2.43162C16.7949 2.36624 17.9645 2.14147 18.4265 1.828C18.198 2.35506 17.3356 3.2314 16.6278 3.72202C16.7595 9.5298 12.3159 14.5962 6.35348 14.5962Z"
-                                fill="currentColor" />
-                        </svg>
+                        target="_blank"><i class="ph-bold ph-x-logo"></i>
                     </a>
                     <a id="linkin" class="connect-icon" href="https://www.linkedin.com/in/abdulraufedits"
-                        target="_blank"><svg width="30" height="30" viewBox="0 0 28 28" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M14 0C6.26801 0 0 6.26801 0 14C0 21.732 6.26801 28 14 28C21.732 28 28 21.732 28 14C28 6.26801 21.732 0 14 0ZM10.6186 7.69215C10.6186 8.6267 9.80852 9.3843 8.80928 9.3843C7.81004 9.3843 7 8.6267 7 7.69215C7 6.7576 7.81004 6 8.80928 6C9.80852 6 10.6186 6.7576 10.6186 7.69215ZM7.24742 10.6281H10.3402V20H7.24742V10.6281ZM12.2268 10.6281H15.3196V11.8305C15.8387 11.1701 16.8354 10.4401 18.4433 10.4401C21.1508 10.4401 21.9738 11.8954 22 15.0537V20H18.9072C18.9072 19.3889 18.903 18.7745 18.8987 18.1604V18.1601V18.1598V18.1597V18.1595C18.8927 17.2883 18.8867 16.4175 18.8928 15.5571C18.9008 14.4345 18.911 12.9855 17.2062 12.9855C15.6977 12.9855 15.3196 14.0976 15.3196 15.2049V20H12.2268V10.6281Z"
-                                fill="currentColor" />
-                        </svg>
+                        target="_blank"><i class="ph-fill ph-linkedin-logo"></i>
                     </a>
-                    <a id="linktree" class="connect-icon" href="https://linktr.ee/abduledits5" target="_blank"><svg
-                            width="25" height="30" viewBox="0 0 22 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M9.04049 6.63293V0.219971H13.004V6.63293L17.4575 2.04588L20.0405 4.76248L15.4534 9.17139H22V12.9123H15.3644L20.085 17.4548L17.4575 20.0823L11 13.6248L4.54251 20.0823L1.91498 17.4548L6.63563 12.9123H0V9.17139H6.63563L1.91498 4.76248L4.54251 2.13495L9.04049 6.63293Z"
-                                fill="currentColor" />
-                            <path d="M13.004 18.0783H9.04049V26.8961H13.004V18.0783Z" fill="currentColor" />
-                        </svg>
+                    <a id="linktree" class="connect-icon" href="https://github.com/abdulraufedits" target="_blank"><i class="ph-fill ph-github-logo"></i>
                     </a>
                 </div>
             </button>
