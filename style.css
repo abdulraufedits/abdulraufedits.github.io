@@ -3,7 +3,6 @@
 
 html {
   --primary-font: "Inter", "Nohemi", "sans serif";
-  --secondary-font: "Spline Sans Mono", "monospace";
   --handwriting-font: "Caveat";
   --white: #fdfdfd;
   --black: #050505;
@@ -61,6 +60,7 @@ body {
 }
 
 a {
+  display: flex;
   text-decoration: none;
   color: inherit;
   transition: 0.3s ;
@@ -120,7 +120,6 @@ img {
   font-weight: 700;
   line-height: 110%;
   letter-spacing: var(--letter-spacing);
-  /* text-transform: uppercase; */
   user-select: none;
   position: relative;
 }
@@ -131,9 +130,7 @@ img {
   line-height: 1.5;
   width: 40ch;
 }
-/* .text_anim{
-  clip-path: polygon(0 0, 120% 0, 120% 120%, 0% 120%);
-} */
+
 .line {
   position: relative;
   clip-path: polygon(0 0, 120% 0, 120% 120%, 0% 120%);
@@ -156,7 +153,7 @@ i.ph-bold, i.ph, i.ph-fill{
   align-items: center;
   justify-content: center;
   font-weight: 500;
-  padding: 18px 32px;
+  padding: 12px 24px;
   font-size: 18px;
   transition-timing-function:  cubic-bezier(0.165, 0.84, 0.44, 1);
 }
@@ -180,6 +177,7 @@ i.ph-bold, i.ph, i.ph-fill{
 .secondary-cta {
   background: var(--white);
   color: var(--black);
+  width: fit-content;
 }
 .secondary-cta:hover,
 .secondary-cta:active {
@@ -265,6 +263,7 @@ input:focus {
   width: 2em;
   color: var(--black);
   background-color: var(--black);
+  transition:  width 0.4s ease;
 }
 .submit-cta:hover span,
 .submit-cta:active span {
@@ -284,7 +283,7 @@ input[type="submit"] {
 .wrapper1 {
   height: 100vh;
   margin: auto;
-  padding: 0px 12rem;
+  /* padding: 0px 12rem; */
   display: flex;
   justify-content: center;
   align-items: center;

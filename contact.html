@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style-2.css">
     <link rel="stylesheet" href="menu.css">
@@ -14,7 +15,6 @@
 </head>
 <body>
     <div class="menu-wrapper">
-        <div class="theme-cta"></div>
         <div class="menu-icon">
             <span class="menu-icon__line menu-icon__line-up"></span>
             <span class="menu-icon__line menu-icon__line-down"></span>
@@ -22,10 +22,8 @@
         
     </div>
     <div class="nav-wrapper">
-        <span>Hope you're having a great day.</span>
         <div class="nav-content">
             <ul class="nav__list">
-                <li class="nav__list-item"><a style="transition-delay: 0.5s;" href="/">Home</a></li>
                 <li class="nav__list-item"><a style="transition-delay: 0.6s;" href="/my-projects">My Work</a></li>
                 <li class="nav__list-item"><a style="transition-delay: 0.7s;" href="/about">About</a></li>
                 <li class="nav__list-item"><a style="transition-delay: 0.8s;" href="#">Contact Me</a></li>
@@ -37,22 +35,22 @@
                                 fill="currentColor" />
                         </svg></a></li>
             </ul>
-            <div class="smlinks">
-                <a href="https://www.facebook.com/abduledits5" target="_blank">Facebook</a>
-                <a href="https://www.instagram.com/abdulraufedits" target="_blank">Instagram</a>
-                <a href="https://www.youtube.com/@abdulraufedits" target="_blank">YouTube</a>
-                <a href="https://behance.net/abdulraufedits" target="_blank">Behance</a>
-            </div>
         </div>
     </div>
     <header class="title-bar">
-        <a href="/"><strong>Abdul Rauf</strong></a>
+        <div class="head-email-box">
+            <a href="editsabdulrauf5681@gmail.com">
+                <strong>Abdul Rauf</strong>
+                <strong id="head-email">editsabdulrauf5681@gmail.com</strong>
+            </a>
+        </div>
         <span style="display: flex; gap: 2rem;">
             <a href="/about">About</a>
             <a href="/my-projects">My Work</a>
-            </span>
-        <div></div>
-        <div></div>
+            <a href="#contact--sec" style="color: var(--blue)">Contact</a>
+            <a target="_blank" class="resume-cta">Resume <i style="position: relative; bottom: -3px;" class="ph-bold ph-arrow-up-right"></i></a>
+        </span>
+        <div class="theme-cta"></div>
     </header>
     <!-- contact sec -->
     <div class="container section">
@@ -82,32 +80,17 @@
                 <strong class="connect-txt">Lorem ipsum dolor</strong>
                 <div class="connect-icons">
                     <a id="twitter" class="connect-icon" href="https://www.twitter.com/abdulraufedits"
-                        target="_blank"><svg width="34" height="30" viewBox="0 0 19 15" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M6.35348 14.5962C4.32049 14.5962 2.4254 14.0049 0.830322 12.9847C2.1846 13.0723 4.57459 12.8624 6.06116 11.4445C3.82487 11.3419 2.81635 9.62672 2.6848 8.89376C2.87481 8.96706 3.78102 9.05501 4.29259 8.84978C1.72012 8.20477 1.32548 5.94725 1.41318 5.25826C1.89552 5.59543 2.71403 5.7127 3.03559 5.68338C0.638519 3.96825 1.50088 1.38822 1.92475 0.831167C3.64498 3.21439 6.22306 4.5529 9.41248 4.62736C9.35235 4.36361 9.32059 4.08902 9.32059 3.807C9.32059 1.78298 10.9566 0.142181 12.9747 0.142181C14.0291 0.142181 14.9792 0.590102 15.6461 1.30657C16.3507 1.14146 17.4112 0.754949 17.9296 0.420707C17.6683 1.3589 16.8548 2.14154 16.3627 2.43162C16.3668 2.44149 16.3587 2.42171 16.3627 2.43162C16.7949 2.36624 17.9645 2.14147 18.4265 1.828C18.198 2.35506 17.3356 3.2314 16.6278 3.72202C16.7595 9.5298 12.3159 14.5962 6.35348 14.5962Z"
-                                fill="currentColor" />
-                        </svg>
+                        target="_blank"><i class="ph-bold ph-x-logo"></i>
                     </a>
-                    <a id="linkin" class="connect-icon" href="https://www.linkedin.com/in/abdulraufedits"
-                        target="_blank"><svg width="30" height="30" viewBox="0 0 28 28" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M14 0C6.26801 0 0 6.26801 0 14C0 21.732 6.26801 28 14 28C21.732 28 28 21.732 28 14C28 6.26801 21.732 0 14 0ZM10.6186 7.69215C10.6186 8.6267 9.80852 9.3843 8.80928 9.3843C7.81004 9.3843 7 8.6267 7 7.69215C7 6.7576 7.81004 6 8.80928 6C9.80852 6 10.6186 6.7576 10.6186 7.69215ZM7.24742 10.6281H10.3402V20H7.24742V10.6281ZM12.2268 10.6281H15.3196V11.8305C15.8387 11.1701 16.8354 10.4401 18.4433 10.4401C21.1508 10.4401 21.9738 11.8954 22 15.0537V20H18.9072C18.9072 19.3889 18.903 18.7745 18.8987 18.1604V18.1601V18.1598V18.1597V18.1595C18.8927 17.2883 18.8867 16.4175 18.8928 15.5571C18.9008 14.4345 18.911 12.9855 17.2062 12.9855C15.6977 12.9855 15.3196 14.0976 15.3196 15.2049V20H12.2268V10.6281Z"
-                                fill="currentColor" />
-                        </svg>
+                    <a id="linkedin" class="connect-icon" href="https://www.linkedin.com/in/abdulraufedits"
+                        target="_blank"><i class="ph-fill ph-linkedin-logo"></i>
                     </a>
-                    <a id="linktree" class="connect-icon" href="https://linktr.ee/abduledits5" target="_blank"><svg
-                            width="25" height="30" viewBox="0 0 22 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M9.04049 6.63293V0.219971H13.004V6.63293L17.4575 2.04588L20.0405 4.76248L15.4534 9.17139H22V12.9123H15.3644L20.085 17.4548L17.4575 20.0823L11 13.6248L4.54251 20.0823L1.91498 17.4548L6.63563 12.9123H0V9.17139H6.63563L1.91498 4.76248L4.54251 2.13495L9.04049 6.63293Z"
-                                fill="currentColor" />
-                            <path d="M13.004 18.0783H9.04049V26.8961H13.004V18.0783Z" fill="currentColor" />
-                        </svg>
+                    <a id="github" class="connect-icon" href="https://github.com/abdulraufedits" target="_blank"><i class="ph-fill ph-github-logo"></i>
                     </a>
                 </div>
             </button>
         </div>
     </footer>
     <script src="script.js"></script>
+    <script src="media.js"></script>
 </body>

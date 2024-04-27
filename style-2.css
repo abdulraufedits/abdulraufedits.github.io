@@ -152,7 +152,7 @@ strong{
 .connect-icons a{
   color: #fafafa;
   transform: translateY(100%);
-    transition: .3s cubic-bezier(0.33, 1, 0.68, 1); 
+  transition: .3s cubic-bezier(0.33, 1, 0.68, 1); 
 }
 .connect-txt{
   color: #050505;

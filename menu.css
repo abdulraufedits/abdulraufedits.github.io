@@ -1,3 +1,4 @@
+
 .menu-icon{
   height: 30px;
   width: 30px;
@@ -7,6 +8,7 @@
   align-items: center;
   flex-direction: column;
 }
+
 .menu-wrapper{
   position: fixed;
   z-index: 1000;
@@ -22,15 +24,26 @@
   display: block;
   background-color: var(--black);
   margin-bottom: 4px;
-  transition: transform 0.2s ease, background-color 0.5s ease;
+  position: relative;
+  /* transition: transform 0.2s ease, background-color 0.5s ease; */
 }
 .menu-icon.menu_active .menu-icon__line-up {
   background-color: var(--black);
-  transform: rotate(-45deg) translate(-3px, 3px);
+  top: 3px;
+  transition: top 0.4s ease;
+}
+.menu-icon.menu_active .menu-icon__line-up {
+  transform: translate(0, 3px) rotate(-45deg);
+  transition: transform 0.3s ease 0.2s;
+}
+
+.menu-icon.menu_active .menu-icon__line-down {
+  top: -3px;
+  transition: top 0.4s ease;
 }
 .menu-icon.menu_active .menu-icon__line-down {
-  background-color: var(--black);
-  transform: rotate(45deg);
+  transform: translate(0, 3px) rotate(45deg);
+  transition: transform 0.3s ease 0.2s;
 }
 .nav-wrapper {
   height: 100vh;
@@ -50,11 +63,6 @@
 .nav-wrapper.menu_active {
   pointer-events: all;
   transform: translateY(0px);
-}
-.nav-wrapper > span {
-  color: var(--black);
-  font-size: 16px;
-  padding-top: 8rem;
 }
 .menu-resume-svg {
   margin-left: 1rem;
@@ -119,19 +127,6 @@
 .theme-cta.dark::before{
   transform: translateX(26px);
 }
-.smlinks {
-  display: flex;
-  gap: 10px;
-}
-.smlinks a {
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--black);
-  transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-.smlinks a:hover{
-  color: var(--blue);
-}
 
 /* media queries  */
 @media screen and (width <= 1024px) {
@@ -139,6 +134,7 @@
     display: flex;
   }
 }
+
 @media screen and (width <= 720px) {
   .nav__list .nav__list-item {
     font-size: 3rem;
@@ -149,24 +145,25 @@
 }
 
 @media screen and (width <= 690px) {
-  .nav-wrapper > span {
-    display: none;
-  }
   .nav-wrapper {
     padding: 0px 2rem;
   }
   .nav-content {
     padding: 0px;
-    justify-content: end;
-    gap: 3rem;
+    gap: 2rem;
   }
 }
 
+@media screen and (width <= 530px) {
+  .menu-wrapper{
+    right: 32px;
+  }
+}
 
 @media screen and (width <= 430px) {
   .nav__list .nav__list-item {
     font-size: 36px;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
   .menu-resume-svg {
     height: 21px;
