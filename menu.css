@@ -139,7 +139,7 @@
 }
 
 .smlinks a:hover {
-  color: (--blue);
+  color: var(--blue);
 }
 /* media queries  */
 @media screen and (width <= 1024px) {
