@@ -8,7 +8,9 @@
   background-color: var(--white);
   gap: 0px;
 }
-
+a:has(.project-sec){
+  display: block;
+}
 .proj-wrapper{
   padding: 2rem 10rem;
   background-color: var(--white);
