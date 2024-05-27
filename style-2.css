@@ -31,6 +31,9 @@ a:has(.project-sec){
   margin-bottom: 8rem;
   opacity: 0;
   transform: translateY(100px);
+  .faded-p{
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
 
 .project-sec.reveal{
@@ -63,7 +66,7 @@ a:has(.project-sec){
   margin-bottom: 12px;
 }
 .tag{
-  background-color: #222222;
+  background-color: rgba(255, 255, 255, 0.1);
   padding: 8px 14px;
   border-radius: 4px;
 }

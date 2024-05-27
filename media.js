@@ -6,8 +6,9 @@ resumeCtas.forEach(resumeCta => {
 
 let projImgs = document.querySelectorAll('.proj-img');
 
-let projectImgs = ["https://ik.imagekit.io/abduledits5/pfolioMe/mathtrove_thumb.png", "https://ik.imagekit.io/abduledits5/pfolioMe/andr15_thumb.png", "https://ik.imagekit.io/abduledits5/pfolioMe/framer_thumb.png", "https://ik.imagekit.io/abduledits5/pfolioMe/penpot_thumb.png", "https://ik.imagekit.io/abduledits5/am_1.png", "https://ik.imagekit.io/abduledits5/thumbnail.png"]
-
+let projectImgs = ["https://ik.imagekit.io/abduledits5/pfolioMe/mathtrove_thumb.png?updatedAt=1716738142375", "https://ik.imagekit.io/abduledits5/pfolioMe/andr15_thumb.png?updatedAt=1716735500016", "https://ik.imagekit.io/abduledits5/pfolioMe/framer_thumb.png?updatedAt=1716736659216", "https://ik.imagekit.io/abduledits5/pfolioMe/penpot_thumb.png?updatedAt=1716735465871", "https://ik.imagekit.io/abduledits5/pfolioMe/am_thumb.png?updatedAt=1716736181494", "https://ik.imagekit.io/abduledits5/pfolioMe/win12_thumb.png?updatedAt=1716737774479"]
+let projColors = ["#111111", "#006465", "#003f65","#005d4a","#161c30","#010a18"];
 for (let i = 0; i < projectImgs.length; i++) {
     projImgs[i].style.backgroundImage = `url(${projectImgs[i]})`;
+    projImgs[i].parentElement.style.backgroundColor = projColors[i];
 }
