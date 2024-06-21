@@ -33,6 +33,11 @@
     .title-bar{
         justify-content: stretch;
     }
+    .title-bar {
+        strong{
+            width: auto;
+        }
+    }
     .name{
         font-size: 7.4vw;
     }
@@ -68,6 +73,9 @@
     .projcontainer{
         height: 500px;
         padding: 28px;
+    }
+    #surprise-txt-temp{
+        display: none;
     }
 
 }
