@@ -53,3 +53,11 @@ h1.exp-h1 {
 .head-email-box:hover > a {
   transform: translateY(-100%);
 }
+
+.name + p{
+  color: var(--white-05);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  width: 40ch;
+}

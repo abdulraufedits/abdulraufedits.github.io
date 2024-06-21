@@ -102,7 +102,7 @@ img {
   user-select: none;
   position: relative;
 }
-.name + p, .faded-p {
+.faded-p {
   color: var(--white-05);
   font-size: 20px;
   font-weight: 400;
