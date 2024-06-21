@@ -1,3 +1,31 @@
+
+#surprise-txt-temp{
+  font-family: var(--handwriting-font);
+  font-weight: 400;
+  font-size: 20px;
+  width: 12ch;
+  position: absolute;
+  right: 12rem;
+  top: 6rem;
+  transform: rotate(-24deg);
+}
+#surprise-txt-temp > i{
+  position: relative;
+  transform: rotate(32deg);
+  right: -56px;
+  top: -24px;
+}
+.container {
+  background-color: var(--white);
+  color: var(--black);
+}
+.devinfo {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  background-color: var(--white);
+}
+
 h1.abt-h1,
 h1.proj-h1,
 h1.skill-h1,

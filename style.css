@@ -73,32 +73,6 @@ img {
   pointer-events: none;
 }
 
-#surprise-txt-temp{
-  font-family: var(--handwriting-font);
-  font-weight: 400;
-  font-size: 20px;
-  width: 12ch;
-  position: absolute;
-  right: 12rem;
-  top: 6rem;
-  transform: rotate(-24deg);
-}
-#surprise-txt-temp > i{
-  position: relative;
-  transform: rotate(32deg);
-  right: -56px;
-  top: -24px;
-}
-.container {
-  background-color: var(--white);
-  color: var(--black);
-}
-.devinfo {
-  display: flex;
-  flex-direction: column;
-  row-gap: 2rem;
-  background-color: var(--white);
-}
 .title-bar {
   display: flex;
   align-items: center;
@@ -110,9 +84,14 @@ img {
   letter-spacing: var(--letter-spacing);
   background-color: var(--white);
   color: var(--black);
-}
-.title-bar span a:hover {
-  color: var(--blue);
+  strong{
+    width: 24ch;
+  }
+  span {
+    a:hover {
+      color: var(--blue);
+    }
+  }
 }
 .name {
   color: var(--black);
@@ -178,10 +157,9 @@ i.ph-bold, i.ph, i.ph-fill{
   background: var(--white);
   color: var(--black);
   width: fit-content;
-}
-.secondary-cta:hover,
-.secondary-cta:active {
-  background-color: var(--white-08);
+  &:hover, &:active{
+    background-color: var(--white-08);
+  }
 }
 
 .contact-sec {
@@ -193,19 +171,19 @@ i.ph-bold, i.ph, i.ph-fill{
 }
 .contact-head {
   width: 50%;
-}
-.contact-head strong {
-  color: #fafafa;
-  font-size: 3rem;
-  font-weight: 600;
-}
-.contact-head p {
-  color: #858585;
-  margin-top: 1rem;
+  strong{
+    color: #fafafa;
+    font-size: 3rem;
+    font-weight: 600;
+  }
+  p{
+    color: #858585;
+    margin-top: 1rem;
+  }
 }
 
 .section {
-  min-height: 80svh;
+  /* min-height: 80svh; */
   padding: 2rem 10rem;
   display: flex;
   flex-direction: column;
