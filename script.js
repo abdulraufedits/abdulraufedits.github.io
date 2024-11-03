@@ -66,20 +66,12 @@ function menuInactive(){
 
 menuInactive();
 
-// Clipboard API
-// let email = document.getElementById('email');
-// let emailBtn = document.querySelector('#email_box button[onclick="copyTxt()"]');
-// function copyTxt(){
-//   navigator.clipboard.writeText(email.textContent);
-//   emailBtn.innerHTML += "copied!"
-// }
-
 let nameDesign = document.querySelector("h1.name > span");
 let namePlusP = document.querySelector("h1.name + p");
 function changeDepart(){
   if(themeCta.classList.contains("dark")){
-    nameDesign.innerHTML = "Frontend Developer";
-    namePlusP.innerHTML = " I'm also doing Frontend web development and I have strong foundation in HTML, CSS and JavaScript and their respective frameworks and libraries.";
+    nameDesign.innerHTML = "Full-Stack Developer";
+    namePlusP.innerHTML = " I'm also a Full-Stack developer and I have strong foundation in both Frontend and Backend tools and programming languages such as C++, Java, JavaScript and their respective frameworks and libraries.";
     nameDesign.setAttribute("style", "color: var(--yellow);");
   } else{
     nameDesign.innerHTML = "UI UX Designer";

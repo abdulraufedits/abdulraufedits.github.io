@@ -185,9 +185,6 @@
     .wrapper1{
         padding: 0 2rem 0 0;
     }
-    .section{
-        min-height: 60svh;
-    }
 }
 @media screen and (max-width: 380px) {
     h1.contact{
