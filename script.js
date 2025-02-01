@@ -66,22 +66,6 @@ function menuInactive(){
 
 menuInactive();
 
-let nameDesign = document.querySelector("h1.name > span");
-let namePlusP = document.querySelector("h1.name + p");
-function changeDepart(){
-  if(themeCta.classList.contains("dark")){
-    nameDesign.innerHTML = "Full-Stack Developer";
-    namePlusP.innerHTML = " I'm also a Full-Stack developer and I have strong foundation in both Frontend and Backend tools and programming languages such as C++, Java, JavaScript and their respective frameworks and libraries.";
-    nameDesign.setAttribute("style", "color: var(--yellow);");
-  } else{
-    nameDesign.innerHTML = "UI UX Designer";
-    namePlusP.innerHTML = "I am a passionate and a dedicated UI/UX Designer with a strong background in creating visually appealing digital experiences.";
-    nameDesign.setAttribute("style", "color: var(--blue);");
-  }
-}
-
-
-
 window.addEventListener('scroll' , revealProjects);
 
 var projects = document.querySelectorAll('.project-sec');
