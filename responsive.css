@@ -3,7 +3,7 @@
         padding: 2rem 4rem ;
     }
     .connect-container{
-        padding: 0rem 4rem;
+        padding: 1rem 4rem;
     }
     #surprise-txt-temp{
         right: 6rem;
@@ -65,7 +65,7 @@
         width: auto;
     }
     .connect-container{
-        padding: 0rem 2rem;
+        padding: 1rem 2rem;
     }
     .proj-img{
         height: 250px;
@@ -116,13 +116,6 @@
     }
 }
 @media screen and (max-width: 430px) {
-    .connect-wrapper{
-        flex-direction: column-reverse;
-        padding: 1rem 0;
-    }
-    .connect-icons{
-        justify-content: center;
-    }
     .cta{
         width: 100%;
     }
@@ -153,17 +146,10 @@
     .contact-head{
         width: 100%;
     }
-    .contact-sec .cta{
-        width: 100%;
-        justify-content: center;
-    }
 }
 @media screen and (max-width: 730px) {
     h1.contact{
         font-size: 2.4rem;
-    }
-    .contact-head p{
-        margin-top: 1.5rem;
     }
 
 }

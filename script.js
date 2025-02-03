@@ -6,7 +6,6 @@ themeCta.addEventListener("click", () => {
   setTimeout(() => {
     changeDepart();
   }, 50);
-  document.getElementById("surprise-txt-temp").style.display = "none";
 });
 
 window.addEventListener('scroll' , reveal);
