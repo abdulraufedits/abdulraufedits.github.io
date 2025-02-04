@@ -11,9 +11,7 @@
 }
 
 h1.abt-h1,
-h1.proj-h1,
-h1.skill-h1,
-h1.exp-h1 {
+h1.proj-h1{
   color: var(--black);
   font-size: 32px;
   line-height: 1.2;
