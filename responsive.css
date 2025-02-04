@@ -77,6 +77,11 @@
     #surprise-txt-temp{
         display: none;
     }
+    .contact-sec{
+        flex-direction: column;
+        align-items: stretch;
+        gap: 3rem;
+    }
 
 }
 @media screen and (max-width: 720px) {
@@ -113,6 +118,12 @@
     }
     .tags{
         flex-wrap: wrap;
+    }
+    .contact-head strong {
+        font-size: 2rem;
+    }
+    .contact-sec .faded-p{
+        font-size: 1.25rem;
     }
 }
 @media screen and (max-width: 430px) {
