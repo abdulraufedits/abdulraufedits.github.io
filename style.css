@@ -207,62 +207,43 @@ a:has(.project-sec){
   margin-bottom: 2rem;
 }
 .project-sec {
-  position: relative;
-  background-color: #111111;
-  border-radius: 24px;
-  overflow: hidden;
-  color: #fafafa;
-  margin-bottom: 8rem;
-  opacity: 0;
-  transform: translateY(100px);
-  .faded-p{
-    color: rgba(255, 255, 255, 0.6);
-  }
+  display: grid;
+  grid-template-columns: repeat(2, minmax(300px, 1fr));
+  width: 100%;
+  gap: 2rem;
+  color: var(--black);
+  margin-bottom: 3rem;
 }
 
-.project-sec.reveal{
-  animation: revealProject;
-  animation-duration: 0.4s;
-  animation-timing-function: ease;
-  animation-play-state: running;
-  animation-fill-mode: forwards;
-}
-
-@keyframes revealProject {
-  from{
-    opacity: 0;
-    transform: translateY(100px);
-  }
-  to{
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 .proj-h2{
   letter-spacing: var(--letter-spacing);
-  color: #fafafa;
-  font-size: 2rem;
+  color: var(--black);
 }
 .tags {
   display: flex;
   gap: 8px;
   font-size: 14px;
-  margin-bottom: 12px;
+  font-weight: 500;
+  margin-top: 12px;
 }
 .tag{
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--white-08);
+  color: var(--white-04);
   padding: 8px 14px;
   border-radius: 4px;
+  &:hover{
+    background-color: var(--white-07);
+    color: var(--black);
+  }
 }
 .projcontainer{
+  border-radius: 24px;
+  border: 1px solid var(--white-07);
+  padding: 24px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: start;
-  gap: 2rem;
-  padding: 48px;
-  height: 500px;
-  width: 100%;
+  align-items: flex-start;
+  gap: 24px;
 }
 .proj-redirect span{
   width: 100%;
@@ -278,24 +259,15 @@ a:has(.project-sec){
 .proj-cta{
   font-size: 20px;
   font-weight: 500;
-  background-color: transparent;
-  border-color: #343434;
+  color: var(--black);
+  &:hover{
+    color: var(--white-04);
+  }
 }
-.proj-cta:hover{
-  color: black;
-  background-color: white;
-}
-.proj-img {
-  position: absolute;
-  top: 15%;
-  right: -15%;
-  height: 400px;
-  background-repeat: no-repeat;
-  background-size: 105%;
-  background-position: center;
-  aspect-ratio: 18/ 10;
-  user-select: none;
-  -webkit-user-select: none;
+.proj-cta.disabled{
+  pointer-events: none;
+  cursor: default;
+  color: var(--white-05);
 }
 
 .connect-container{

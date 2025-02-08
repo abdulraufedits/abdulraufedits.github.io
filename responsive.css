@@ -5,22 +5,6 @@
     .connect-container{
         padding: 1rem 4rem;
     }
-    #surprise-txt-temp{
-        right: 6rem;
-    }
-    .projcontainer{
-        height: 700px;
-        width: auto;
-        justify-content: flex-start;
-    }
-    .proj-img{
-        top: auto;
-        bottom: 10%;
-        left: 0; 
-        right: 0; 
-        margin-left: auto; 
-        margin-right: auto;
-    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -51,10 +35,8 @@
     #head-email{
         display: none;
     }
-    #surprise-txt-temp{
-        display: block;
-        right: auto;
-        left: 4rem;
+    .projcontainer .faded-p {
+        width: auto;
     }
 }
 @media screen and (max-width: 900px) {
@@ -67,26 +49,23 @@
     .connect-container{
         padding: 1rem 2rem;
     }
-    .proj-img{
-        height: 250px;
-    }
-    .projcontainer{
-        height: 500px;
-        padding: 28px;
-    }
-    #surprise-txt-temp{
-        display: none;
-    }
     .contact-sec{
         flex-direction: column;
         align-items: stretch;
         gap: 3rem;
     }
+    
+    .tag{
+        font-size: 12px;
+    }
+    .tags{
+        flex-wrap: wrap;
+    }
 
 }
 @media screen and (max-width: 720px) {
     .project-sec{
-        border-radius: 12px;
+        grid-template-columns: 1fr;
     }
 }
 @media screen and (max-width: 530px) {
@@ -101,23 +80,6 @@
     }
     .menu-wrapper{
         right: 20px;
-    }
-    .proj-img{
-        height: 160px;
-        bottom: 5%;
-    }
-    .projcontainer{
-        height: 400px;
-        gap: 1rem;
-    }
-    .proj-h2{
-        font-size: 24px;
-    }
-    .tag{
-        font-size: 12px;
-    }
-    .tags{
-        flex-wrap: wrap;
     }
     .contact-head strong {
         font-size: 2rem;
